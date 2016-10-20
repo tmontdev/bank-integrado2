@@ -1,0 +1,80 @@
+#about
+	width 100%
+	float: left
+	.about-switch
+		width 100%
+		float left
+		text-align center
+		padding 5% 30%
+		.switch-content
+			width 100%
+			float left
+			border-radius 40px
+			background-color #ededed
+			height 80px
+			border solid 1px #ededed
+			z-index 99
+			.switch-item
+				width 50%
+				float left
+				border-radius 40px
+				height 100%
+				background-color #ededed
+				border solid 1px #ededed
+				color #656565
+				transition all 500ms
+				font-size 1em
+				i
+					font-size 1.4em
+					color #8090ff
+				&:hover
+					color #212121
+			.actived
+				background-color white
+				color black
+	.about-item
+		width 100%
+		float left
+		position relative
+		height 400px
+		.about-item-presentation
+			width 100%
+			float left
+			h1
+				float left
+				width 40%
+				font-size 1.5em
+				font-family $font2
+				color #404040
+				span
+					font-family $font1
+		.about-item-content
+			width 100%
+			float left
+			color #454545
+			font-family $font2
+			line-height 1.5
+			margin-top 50px
+
+			span
+				width 40%
+				float left
+		.image
+			width 70%
+			float left
+			position absolute
+			top -50px
+			right 0
+			height 100%
+			background-size cover
+			z-index -1
+	.who
+		display none
+		.image
+			background-image url('../img/who.jpg')
+	.mission
+		display none
+		.image
+			background-image url('../img/mission.jpg')
+	.actived
+		display block

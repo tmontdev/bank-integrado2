@@ -165,7 +165,7 @@ header .header-sr .hd-menu nav ul li a {
 #home {
   width: 100%;
   float: left;
-  background-image: url("../img/paragliding-in-mountains.jpg");
+  background-image: url("../img/home.jpg");
   background-position: top center;
   background-size: cover;
   height: 100vh;
@@ -223,4 +223,102 @@ header .header-sr .hd-menu nav ul li a {
   font-family: "Roboto";
   margin: 5% 0%;
   font-size: 1.5em;
+}
+#about {
+  width: 100%;
+  float: left;
+}
+#about .about-switch {
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 5% 30%;
+}
+#about .about-switch .switch-content {
+  width: 100%;
+  float: left;
+  border-radius: 40px;
+  background-color: #ededed;
+  height: 80px;
+  border: solid 1px #ededed;
+  z-index: 99;
+}
+#about .about-switch .switch-content .switch-item {
+  width: 50%;
+  float: left;
+  border-radius: 40px;
+  height: 100%;
+  background-color: #ededed;
+  border: solid 1px #ededed;
+  color: #656565;
+  transition: all 500ms;
+  font-size: 1em;
+}
+#about .about-switch .switch-content .switch-item i {
+  font-size: 1.4em;
+  color: #8090ff;
+}
+#about .about-switch .switch-content .switch-item:hover {
+  color: #212121;
+}
+#about .about-switch .switch-content .actived {
+  background-color: #fff;
+  color: #000;
+}
+#about .about-item {
+  width: 100%;
+  float: left;
+  position: relative;
+  height: 400px;
+}
+#about .about-item .about-item-presentation {
+  width: 100%;
+  float: left;
+}
+#about .about-item .about-item-presentation h1 {
+  float: left;
+  width: 40%;
+  font-size: 1.5em;
+  font-family: "Roboto";
+  color: #404040;
+}
+#about .about-item .about-item-presentation h1 span {
+  font-family: "Ubuntu";
+}
+#about .about-item .about-item-content {
+  width: 100%;
+  float: left;
+  color: #454545;
+  font-family: "Roboto";
+  line-height: 1.5;
+  margin-top: 50px;
+}
+#about .about-item .about-item-content span {
+  width: 40%;
+  float: left;
+}
+#about .about-item .image {
+  width: 70%;
+  float: left;
+  position: absolute;
+  top: -50px;
+  right: 0;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+#about .who {
+  display: none;
+}
+#about .who .image {
+  background-image: url("../img/who.jpg");
+}
+#about .mission {
+  display: none;
+}
+#about .mission .image {
+  background-image: url("../img/mission.jpg");
+}
+#about .actived {
+  display: block;
 }
