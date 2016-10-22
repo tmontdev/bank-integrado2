@@ -211,6 +211,7 @@ header#header.nice-header .block-menu {
   -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.1);
   -o-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.1);
   -ms-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.1);
+  padding: 15px 0;
 }
 header#header.nice-header .block-menu ul li > a {
   color: #666;
