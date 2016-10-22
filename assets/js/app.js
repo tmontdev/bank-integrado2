@@ -17,16 +17,28 @@ $(function(){
 (function(){
 	var select_element = $("section#home .wrapper-blocks .block-simulator form .form-group .form-control.control-select");
 	var select_options = select_element.find('ul.options');
+	var data_parcels = {
+		'1': {
+			1: '60x',
+			2: '48x',
+			3: '46x',
+			4: '24x',
+			5: '12x'
+		},
+		'2': {
+			1: '60x',
+			2: '120x',
+			3: '180x',
+			4: '240x'
+		}
+	};
 
 	select_element.click(function(){
 		$(this).toggleClass("active");
 	});
 
-	select_element.each(function(x){
-		var id_select = $(this).data('select');
-		var select_hidden = $(id_select);
-		var options_content = $(this).find('ul.options');
-		var select_title = $(this).find('.title');
+	var replaceSelectOptions = function(select_hidden, select_title, options_content){
+		options_content.html('');
 
 		select_hidden.find('option').each(function(o){
 			var option_value = $(this).attr('value');
@@ -39,6 +51,15 @@ $(function(){
 
 			options_content.append('<li data-value="'+option_value+'">'+option_name+'</li>');
 		});
+	};
+
+	select_element.each(function(x){
+		var id_select = $(this).data('select');
+		var select_hidden = $(id_select);
+		var options_content = $(this).find('ul.options');
+		var select_title = $(this).find('.title');
+
+		replaceSelectOptions(select_hidden, select_title, options_content);
 	});
 
 	select_options.find('li').click(function(){
@@ -53,11 +74,23 @@ $(function(){
 
 		select_control.find('.title').text(option_name);
 		select_hidden.val(option_value).change();
-
 	});
 
 	$("#simulate-type").on('change', function(){
-		alert('ok');
+		var option_selected = $(this).find(':selected').attr('value');
+		var option_parcels = data_parcels[option_selected];
+
+		var select_control = $("#simulate-parcels-control");
+		var select_hidden = $("#simulate-parcels");
+		var select_title = select_control.find('.title');
+		var options_content = select_control.find('ul.options');
+
+		select_hidden.empty();
+		$.each(option_parcels, function(key, value){
+			select_hidden.append('<option value="'+key+'">'+value+'</option>');
+		});
+
+		replaceSelectOptions(select_hidden, select_title, options_content);
 	});
 
 })();
