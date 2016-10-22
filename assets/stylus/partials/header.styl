@@ -1,45 +1,76 @@
-header
+header#header
 	width 100%
 	float left
-	position fixed
-	.header-fr
+	position absolute
+	top 0
+	left 0
+	transition all 250ms ease-in-out
+	.block-contact
+		background-color rgba(0, 0, 0, 0.15)
 		width 100%
 		float left
-		background-color alpha(black, 50%)
-		.hd-divider
-			width 33.333%
-			float left
-			text-align center
-			.fa
-				color white
-			.span-content
-				font-family $font1
-				color white
-	.header-sr
+		font-family 'Open Sans', sans-serif
+		transition all 250ms
+		padding-top 12px
+		ul
+			padding 0
+			margin 0 0 10px -5px
+			list-style none
+			text-align right
+			li
+				color #FFF
+				font-size fs = 14px
+				letter-spacing 1px
+				margin-left	24px
+				display inline-block
+				padding-right 5px
+				padding-left 5px
+				&:last-child
+					padding-right 0
+				i
+					margin-right 3px
+					opacity 0.7
+					font-size fs+3
+	.block-menu
 		width 100%
 		float left
-		background-color alpha(black, 30%)
-		.hd-logo
-			width 30%
+		border-bottom 1px solid alpha(#FFF, 0.3)
+		padding 25px 0
+		transition all 250ms ease-in-out
+		.logo
+			width 140px
 			float left
-			height 100px
-			background-color transparent
-		.hd-menu
+			> img
+				max-width 100%
+				display block
+				margin 0 auto
+		ul
+			float right
 			width 70%
-			float left
-			nav
-				width 100%
-				float left
-				ul
-					list-style none
-					float right
-					margin 4% 0%
-					li
-						display: inline-block
-						a
-							text-decoration none
-							color white
-							font-family $font2
-							transition all 250ms
-							padding 10px 30px
-							position relative
+			text-align right
+			list-style none
+			padding 0
+			margin 0
+			li
+				display inline-block
+				> a
+					color #FFF
+					font-size 16px
+					letter-spacing 1px
+					padding 5px 0 0 45px
+					display block
+					font-family 'Open Sans', sans-serif
+					text-decoration none
+					font-weight 600
+	&.nice-header
+		position fixed
+		top 0
+		left 0
+		z-index 4
+		.block-contact
+			display none
+		.block-menu
+			background-color #FFF
+			ap(box-shadow, 0 3px 6px 0 rgba(0, 0, 0, 0.1))
+			ul li > a
+				color #666

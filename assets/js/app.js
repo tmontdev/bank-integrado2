@@ -25,3 +25,27 @@ $(function(){
 	});
 
 });
+
+(function(){
+	/*
+	 * Make nice menu on scroll
+	*/
+	var makeMenu = function(){
+		var logos = {
+			white: 'http://www.airbus.com/presscentre/corporate-information/logo-downloads/?eID=maglisting_push&tx_maglisting_pi1%5BdocID%5D=104852',
+			colored: 'http://www.airbus.com/presscentre/corporate-information/logo-downloads/?eID=maglisting_push&tx_maglisting_pi1%5BdocID%5D=104854'
+		};
+
+		var scroll_top = $(window).scrollTop();
+		var header = $("header#header");
+
+		if(scroll_top > 70){
+			return header.addClass("nice-header").find('.block-menu .logo > img').attr('src', logos.colored);
+		}
+
+		header.removeClass("nice-header").find('.block-menu .logo > img').attr('src', logos.white);
+	};
+
+	makeMenu();
+	$(window).scroll(makeMenu);
+})();
