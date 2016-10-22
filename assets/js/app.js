@@ -1,11 +1,66 @@
 $(function(){
-    $(".element").typed({
-      strings: ["O que acha? ^1000 Vamos Simplificar?", "Podemos fazer o seu sonho acontecer.", "Fazer o BUROCRÁTICO,^1000 se tornar PRÁTICO.", "As parcelas são menores, ^1000 compare.", "FAÇA SUA SIMULAÇÃO AGORA!"],
-      typeSpeed: 100,
-      backDelay: 1000,
-      loop: false,
-    });
+	var texts_apresentations = [
+		'O que acha? ^1000 Vamos <small>simplificar?</small>',
+		'Fazer o <strong>^300BUROCRÁTICO</strong>,^1000 se tornar ^300 <strong>PRÁTICO.</strong>',
+		'As parcelas são menores, <small>^300 compare.</small>',
+		'Faça sua simulação <strong>AGORA!</strong>'
+	];
+
+	$("section#home .wrapper-blocks .block-info .block-apresentation span.text").typed({
+		strings: texts_apresentations,
+		typeSpeed: 50,
+		backDelay: 500,
+		loop: false,
+	});
+
 });
+(function(){
+	var select_element = $("section#home .wrapper-blocks .block-simulator form .form-group .form-control.control-select");
+	var select_options = select_element.find('ul.options');
+
+	select_element.click(function(){
+		$(this).toggleClass("active");
+	});
+
+	select_element.each(function(x){
+		var id_select = $(this).data('select');
+		var select_hidden = $(id_select);
+		var options_content = $(this).find('ul.options');
+		var select_title = $(this).find('.title');
+
+		select_hidden.find('option').each(function(o){
+			var option_value = $(this).attr('value');
+			var option_name = $(this).text();
+
+			if(o == 0){
+				select_hidden.val(option_value).change();
+				select_title.text(option_name);
+			}
+
+			options_content.append('<li data-value="'+option_value+'">'+option_name+'</li>');
+		});
+	});
+
+	select_options.find('li').click(function(){
+		var option_value = $(this).data('value');
+		var option_name = $(this).text();
+
+		var select_control = $(this).parents(".form-control.control-select");
+
+		var id_select_hidden = select_control.attr('id').toString().replace('-control', '');
+		var select_hidden = $("#"+id_select_hidden);
+
+
+		select_control.find('.title').text(option_name);
+		select_hidden.val(option_value).change();
+
+	});
+
+	$("#simulate-type").on('change', function(){
+		alert('ok');
+	});
+
+})();
 $(function(){
 	 var headerHeight = $('.header').height();
 	$('.home').css('padding-top', headerHeight+'px');

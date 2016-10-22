@@ -1,0 +1,217 @@
+section#home
+	width 100%
+	float left
+	background-image url('http://www.amazingwallpaperz.com/wp-content/uploads/Commercial-Airplane-Widescreen-HD-Wallpapers.jpg')
+	background-position top center
+	background-size cover
+	height 100vh
+	.overlay
+		width 100%
+		float left
+		height 100%
+		background-color alpha(#000, 0.62)
+	.wrapper-blocks
+		width 100%
+		margin-top 25vh
+		.block-simulator,
+		.block-info
+			width 50%
+			float left
+		.block-simulator
+			padding-right 20px
+			h2
+				width 100%
+				float left
+				padding 0
+				margin 0
+				color #FFF
+				font-family 'Roboto Condensed', sans-serif
+				font-size 32px
+				font-weight normal
+				strong
+					color: colors.blue1
+			form
+				width 90%
+				float left
+				margin-top 30px
+				.form-group
+					width 100%
+					float left
+					margin-bottom 20px
+					> span.form-identifier
+						float left
+						background-color: colors.blue1
+						height 45px
+						line-height @height
+						padding 0 15px
+						color #FFF
+						font-family 'Roboto Condensed', sans-serif
+						border-radius 5px 0 0 5px
+						font-size 18px
+						text-align center
+					.form-control
+						border-radius 0 5px 5px 0
+						height 45px
+						line-height @height
+						font-size 18px
+						font-family 'Roboto Condensed', sans-serif
+						font-weight 100
+						transition all 300ms ease
+						background-color alpha(#000, 0.3)
+						padding 0 15px
+						border 0
+						float left
+						color #FFF
+						&:hover
+							background-color alpha(#000, 0.4)
+						&:focus,
+						&.active
+							background-color alpha(#000, 0.7)
+							outline 0
+							color #FFF
+					input.form-control
+						width 70%
+					.control-hidden
+						display none
+					.form-control.control-select
+						width 60%
+						color alpha(#FFF, 0.7)
+						cursor pointer
+						position relative
+						.title
+							width 100%
+							float left
+							position relative
+							&:before
+								font-family FontAwesome
+								text-rendering auto
+								-webkit-font-smoothing antialiased
+								-moz-osx-font-smoothing grayscale
+								content "\f107"
+								position absolute
+								right 0
+								font-size 25px
+						ul.options
+							list-style none
+							width 100%
+							float left
+							position absolute
+							top 80%
+							left 0
+							background-color alpha(#000, 0.7)
+							margin 0
+							padding 0
+							line-height initial
+							border-radius 0 0 5px 5px
+							z-index -1
+							visibility hidden
+							opacity 0
+							transition opacity 450ms, top 350ms, visibility 300ms, z-index 300ms
+							li
+								padding 10px 15px
+								font-size 17px
+								transition all 100ms ease
+								&:hover
+									background-color alpha(#000, 0.2)
+						&.active
+							border-radius 0 5px 0 0
+							ul.options
+								z-index 3
+								visibility visible
+								opacity 1
+								top 100%
+		.block-info
+			padding-left 20px
+			h1
+				width 100%
+				float left
+				padding 0
+				margin 0
+				color #FFF
+				font-family 'Roboto Condensed', sans-serif
+				font-weight bold
+				font-size 48px
+				position relative
+				&:after
+					content ''
+					display block
+					position absolute
+					bottom -5px
+					left 0
+					height 8px
+					width 10%
+					background-color #2770ce
+			.block-apresentation
+				width 100%
+				float left
+				padding-top 20px
+				margin 0
+				color #FFF
+				font-family 'Roboto Condensed', sans-serif
+				font-weight 100
+				font-size 28px
+				small
+					font-size 28px
+					transform scale(1.1)
+					color: colors.blue1
+					font-weight bold
+				strong
+					transform scale(1.4)
+					color: colors.blue1
+					font-weight bold
+			.block-button
+				width 100%
+				margin-top 100px
+				float left
+				button.btn-simulate
+					color #FFF
+					font-family 'Roboto Condensed', sans-serif
+					border 0
+					padding 10px 40px
+					cursor pointer
+					border-radius 4px
+					font-size 20px
+					background-color: colors.blue1
+	.shadow
+		width 100%
+		float left
+		height 100%
+		background-color alpha(#000, 0.7)
+		.hm-divider
+			width 50%
+			float left
+			margin-top 300px
+		.simulator-square
+			text-align center
+			span
+				color white
+				font-family $font2
+				font-size 2em
+			form.simulator
+				width 100%
+				float left
+				padding 2%
+				.form-item
+					width 100%
+					float left
+					padding 10px 5px
+		.presentation-square
+			text-align center
+			h1
+				color white
+				font-family $font1
+				margin 0.5%
+				font-size 2em
+			h2
+				color white
+				font-family $font1
+				margin 0.5%
+			h3
+				color white
+				font-family $font1
+				margin 0.5% 0% 3% 0%
+			span
+				color white
+				font-family $font2
+				margin 5% 0%
+				font-size 1.5em
