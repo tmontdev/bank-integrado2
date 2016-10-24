@@ -878,11 +878,11 @@ section#home .wrapper-blocks .block-info .block-button button.btn-simulate {
   -ms-transform: scale(1);
 }
 section#home .wrapper-blocks .block-info .block-button button.btn-simulate.featured {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -o-transform: scale(1.3);
-  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
 }
 section#home .shadow {
   width: 100%;

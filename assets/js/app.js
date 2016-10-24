@@ -118,7 +118,7 @@ $(function(){
 		btn_simulate.addClass('featured');
 		setInterval(function(){
 			btn_simulate.removeClass('featured');
-		}, 300);
+		}, 100);
 	});
 
 })();
