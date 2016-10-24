@@ -13,7 +13,7 @@ $(function(){
 	$('#teste').click(function(){
 	    $('#teste').slideUp();
 	});
-})();
+});
 
 
 (function(){
@@ -115,7 +115,10 @@ $(function(){
 	$("#simulate-parcels").on('change', function(){
 		var btn_simulate = $("section#home .wrapper-blocks .block-info .block-button button.btn-simulate");
 
-		btn_simulate.css('transform', 'scale(1.4)');
+		btn_simulate.addClass('featured');
+		setInterval(function(){
+			btn_simulate.removeClass('featured');
+		}, 300);
 	});
 
 })();
