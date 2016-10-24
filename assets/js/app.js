@@ -130,11 +130,11 @@ $(function(){
 	 * on btn_simulate,
 	 * to highlight effect
 	*/
-	$("#simulate-parcels").on('change', function(){
+	$(document).on('click', '#simulate-parcels-control ul.options li', function(){
 		var btn_simulate = $("section#home .wrapper-blocks .block-info .block-button button.btn-simulate");
 
 		btn_simulate.addClass('featured');
-		setInterval(function(){
+		setTimeout(function(){
 			btn_simulate.removeClass('featured');
 		}, 100);
 	});
