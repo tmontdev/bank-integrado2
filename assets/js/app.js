@@ -1,4 +1,4 @@
-(function(){
+$(function(){
 	$('.to-car').click(function(event) {
 		$('.house').removeClass('actived');
 		$('.car').addClass('actived');
@@ -7,11 +7,11 @@
 		$('.car').removeClass('actived');
 		$('.house').addClass('actived');
 	});
-})();
+});
 
 $(function(){
-	$('#teste').click(function(){
-	    $('#teste').slideUp();
+	$('.question-field').click(function(){
+	    $(this'.question-answer').slideUp();
 	});
 });
 
