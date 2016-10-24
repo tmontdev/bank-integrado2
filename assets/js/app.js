@@ -32,7 +32,7 @@ $(function(){
 		loop: false,
 	});
 
-});
+})();
 (function(){
 	var select_element = $("section#home .wrapper-blocks .block-simulator form .form-group .form-control.control-select");
 	var select_options = select_element.find('ul.options');
