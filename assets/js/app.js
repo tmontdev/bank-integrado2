@@ -17,7 +17,10 @@ $(function(){
 
 
 (function(){
-
+	/*
+	 * Texts to effect writing
+	 * in #home
+	*/
 	var texts_apresentations = [
 		'O que acha? ^1000 Vamos <small>simplificar?</small>',
 		'Fazer o <strong>^300BUROCRÁTICO</strong>,^1000 se tornar ^300 <strong>PRÁTICO.</strong>',
@@ -25,14 +28,18 @@ $(function(){
 		'Faça sua simulação <strong>AGORA!</strong>'
 	];
 
+	/*
+ 	 * element to write @var texts_apresentations
+ 	 * using jQuery typed
+	*/
 	$("section#home .wrapper-blocks .block-info .block-apresentation span.text").typed({
 		strings: texts_apresentations,
 		typeSpeed: 50,
 		backDelay: 500,
 		loop: false,
 	});
+})();
 
-});
 (function(){
 	var select_element = $("section#home .wrapper-blocks .block-simulator form .form-group .form-control.control-select");
 	var select_options = select_element.find('ul.options');
@@ -95,6 +102,11 @@ $(function(){
 		select_hidden.val(option_value).change();
 	});
 
+	/*
+	 * On change #simulate-type,
+	 * replaces #simulate-parcels with
+	 * parcels of @var data_parcels
+	*/
 	$("#simulate-type").on('change', function(){
 		var option_selected = $(this).find(':selected').attr('value');
 		var option_parcels = data_parcels[option_selected];
@@ -112,13 +124,19 @@ $(function(){
 		replaceSelectOptions(select_hidden, select_title, options_content);
 	});
 
-	$("#simulate-parcels").on('change', function(){
+	/*
+	 * on change #simulate-parcels,
+	 * add and remove class 'featured'
+	 * on btn_simulate,
+	 * to highlight effect
+	*/
+	$(document).on('click', '#simulate-parcels-control ul.options li', function(){
 		var btn_simulate = $("section#home .wrapper-blocks .block-info .block-button button.btn-simulate");
 
 		btn_simulate.addClass('featured');
-		setInterval(function(){
+		setTimeout(function(){
 			btn_simulate.removeClass('featured');
-		}, 300);
+		}, 100);
 	});
 
 })();

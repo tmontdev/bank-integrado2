@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Economica:400,700");
+@import url("https://fonts.googleapis.com/css?family=Arizonia");
 *,
 *:before,
 *:after {
@@ -217,84 +218,98 @@ header#header.nice-header .block-menu {
 header#header.nice-header .block-menu ul li > a {
   color: #666;
 }
-#about {
+section#about {
   width: 100%;
   float: left;
+  padding: 40px 0;
 }
-#about .about-switch {
+section#about .about-switch {
   width: 100%;
   float: left;
   text-align: center;
-  padding: 5% 30%;
+  padding: 0;
+  position: relative;
+  z-index: 3;
 }
-#about .about-switch .switch-content {
-  width: 100%;
+section#about .about-switch .switch-content {
+  width: 40%;
+  margin-left: 30%;
   float: left;
   border-radius: 40px;
   background-color: #ededed;
-  height: 80px;
+  height: 70px;
   border: solid 1px #ededed;
-  z-index: 99;
 }
-#about .about-switch .switch-content .switch-item {
+section#about .about-switch .switch-content .switch-item {
   width: 50%;
   float: left;
   border-radius: 40px;
   height: 100%;
   background-color: #ededed;
   border: solid 1px #ededed;
-  color: #656565;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
-  -moz-transition: all 500ms;
-  -o-transition: all 500ms;
-  -ms-transition: all 500ms;
-  font-size: 1em;
+  color: #5d5858;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  -ms-transition: all 300ms;
+  font-size: 1.1em;
+  outline: 0;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-#about .about-switch .switch-content .switch-item i {
+section#about .about-switch .switch-content .switch-item i {
   font-size: 1.4em;
-  color: #8090ff;
+  color: #2770ce;
+  position: relative;
+  top: 1px;
+  margin-right: 2px;
 }
-#about .about-switch .switch-content .switch-item:hover {
+section#about .about-switch .switch-content .switch-item:hover {
   color: #212121;
 }
-#about .about-switch .switch-content .actived {
+section#about .about-switch .switch-content .actived {
   background-color: #fff;
-  color: #000;
 }
-#about .about-item {
+section#about .about-item {
   width: 100%;
   float: left;
   position: relative;
-  height: 400px;
+  padding: 90px 0 30px 0;
+  min-height: 450px;
+  display: none;
+  background-size: 65% auto;
+  background-position: 110% 0;
+  background-repeat: no-repeat;
+  margin-top: -80px;
 }
-#about .about-item .about-item-presentation {
+section#about .about-item .block-info {
+  width: 50%;
+  float: left;
+  padding-top: 10px;
+}
+section#about .about-item .block-info h1 {
+  float: left;
   width: 100%;
-  float: left;
-}
-#about .about-item .about-item-presentation h1 {
-  float: left;
-  width: 40%;
-  font-size: 1.5em;
-  font-family: "Roboto";
+  font-size: 40px;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #404040;
+  margin: 0;
+  padding: 0;
 }
-#about .about-item .about-item-presentation h1 span {
-  font-family: "Ubuntu";
+section#about .about-item .block-info h1 span {
+  color: #2770ce;
 }
-#about .about-item .about-item-content {
+section#about .about-item .block-info p {
   width: 100%;
+  margin: 0;
+  padding: 20px 0 0 0;
   float: left;
-  color: #454545;
-  font-family: "Roboto";
-  line-height: 1.5;
-  margin-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0,0,0,0.4);
+  font-size: 16px;
 }
-#about .about-item .about-item-content span {
-  width: 40%;
-  float: left;
-}
-#about .about-item .image {
+section#about .about-item .image {
   width: 70%;
   float: left;
   position: absolute;
@@ -304,19 +319,13 @@ header#header.nice-header .block-menu ul li > a {
   background-size: cover;
   z-index: -1;
 }
-#about .who {
-  display: none;
-}
-#about .who .image {
+section#about .about-item.who {
   background-image: url("../img/who.jpg");
 }
-#about .mission {
-  display: none;
-}
-#about .mission .image {
+section#about .about-item.mission {
   background-image: url("../img/mission.jpg");
 }
-#about .actived {
+section#about .about-item.actived {
   display: block;
 }
 #question {
@@ -878,11 +887,11 @@ section#home .wrapper-blocks .block-info .block-button button.btn-simulate {
   -ms-transform: scale(1);
 }
 section#home .wrapper-blocks .block-info .block-button button.btn-simulate.featured {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -o-transform: scale(1.3);
-  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
 }
 section#home .shadow {
   width: 100%;
