@@ -16,7 +16,7 @@ Contato (Desça la em baixo) = http://wp.swlabs.co/goahead/
 
 Faq = http://adventure-tours.themedelight.com/faqs/
 
---- FOTER  ---
+--- FOOTER  ---
 
 Temos duas opções de como fazer o footer
 #1.

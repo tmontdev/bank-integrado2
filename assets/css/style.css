@@ -319,11 +319,334 @@ header#header.nice-header .block-menu ul li > a {
 #about .actived {
   display: block;
 }
+#question {
+  width: 100%;
+  float: left;
+  background-color: #f6f6f6;
+  position: relative;
+}
+#question button {
+  position: absolute;
+  width: 200px;
+  top: 25px;
+  padding: 10px 0%;
+  border-radius: 25px;
+  border: solid 1px #353535;
+  background-color: #353535;
+  color: #fff;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  -moz-transition: all 250ms;
+  -o-transition: all 250ms;
+  -ms-transition: all 250ms;
+}
+#question button:hover {
+  background-color: #2770ce;
+  border: solid 1px #2770ce;
+  box-shadow: 0px 0px 2px #2770ce;
+}
+#question .to-house {
+  right: 15px;
+}
+#question .to-car {
+  left: 15px;
+}
+#question .question-square {
+  width: 80%;
+  float: left;
+  box-shadow: 0px 0px 2px #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  display: none;
+}
+#question .question-square .question-title {
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 2% 1%;
+  border-bottom: solid 2px #ededed;
+}
+#question .question-square .question-title span {
+  font-family: "Ubuntu";
+  font-size: 1.6em;
+  color: #353535;
+}
+#question .question-square .question-container {
+  width: 100%;
+  float: left;
+  padding: 0% 7% 0% 5%;
+}
+#question .question-square .question-container .question-field {
+  width: 100%;
+  float: left;
+  border-bottom: solid 2px #ededed;
+  position: relative;
+  padding: 5px 10px 5px 3em;
+}
+#question .question-square .question-container .question-field .query-icon {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+}
+#question .question-square .question-container .question-field .query-icon i {
+  font-size: 2.5em;
+  color: #2770ce;
+}
+#question .question-square .question-container .question-field .question-query {
+  width: 100%;
+  float: left;
+  padding: 10px 0%;
+}
+#question .question-square .question-container .question-field .question-query span {
+  width: 100%;
+  float: left;
+  font-family: "Roboto";
+  color: #353535;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+#question .question-square .question-container .question-field .question-query .question-answer {
+  width: 100%;
+  float: left;
+  padding: 1% 0%;
+}
+#question .question-square .question-container .question-field .question-query .question-answer span {
+  font-weight: 300;
+}
+#question .question-square .question-container .question-field:last-child {
+  border-bottom: none;
+}
+#question .car {
+  margin: 1% 20% 1% 0%;
+}
+#question .house {
+  margin: 1% 0% 1% 20%;
+}
+#question .actived {
+  opacity: 1;
+  display: block;
+}
+#contact {
+  width: 100%;
+  float: left;
+}
+#contact .contact-social {
+  width: 40%;
+  float: left;
+  background-color: #2770ce;
+  color: #fff;
+  padding: 0% 2% 0% 10%;
+  position: relative;
+}
+#contact .contact-social .contact-social-presentation {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-bottom: 1em;
+}
+#contact .contact-social .contact-social-presentation h2 {
+  color: #fff;
+  font-family: "Ubuntu";
+  margin: 5% 0% 2% 0%;
+  font-weight: 400;
+  text-align: center;
+}
+#contact .contact-social .contact-social-presentation span {
+  width: 100%;
+  float: left;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+#contact .contact-social .contact-social-icon {
+  position: absolute;
+  font-size: 2em;
+  top: 5%;
+  left: 10%;
+}
+#contact .contact-social .social-square {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+#contact .contact-social .social-square a {
+  width: 100%;
+  float: right;
+  text-decoration: none;
+  color: #fff;
+  padding: 25px 0%;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  -moz-transition: all 250ms;
+  -o-transition: all 250ms;
+  -ms-transition: all 250ms;
+}
+#contact .contact-social .social-square a:hover {
+  padding: 20px 0px 30px 0px;
+}
+#contact .contact-social .social-square a:hover .social-icon {
+  top: 10px;
+  text-shadow: 0px 0px 2px #fff;
+  box-shadow: 0px 0px 2px #fff;
+}
+#contact .contact-social .social-square a:hover .social-text {
+  text-shadow: 0px 0px 2px #fff;
+}
+#contact .contact-social .social-square a:hover .social-text span {
+  font-size: 1em;
+}
+#contact .contact-social .social-square a .social-icon {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  border: solid 1px #fff;
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  left: 0%;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  -moz-transition: all 250ms;
+  -o-transition: all 250ms;
+  -ms-transition: all 250ms;
+}
+#contact .contact-social .social-square a .social-icon i {
+  padding: 28%;
+}
+#contact .contact-social .social-square a .social-icon .bigger {
+  padding: 25%;
+  font-size: 1.3em;
+}
+#contact .contact-social .social-square a .social-text {
+  width: 100%;
+  float: left;
+  padding-left: 3em;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  -moz-transition: all 250ms;
+  -o-transition: all 250ms;
+  -ms-transition: all 250ms;
+}
+#contact .contact-social .social-square a .social-text span {
+  font-family: "Roboto";
+  font-weight: 400;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  -moz-transition: all 250ms;
+  -o-transition: all 250ms;
+  -ms-transition: all 250ms;
+}
+#contact .contact-form {
+  width: 60%;
+  float: left;
+  padding: 0% 10% 0% 2%;
+  text-align: justify;
+}
+#contact .contact-form .form-presentation {
+  width: 100%;
+  float: left;
+}
+#contact .contact-form .form-presentation h2 {
+  font-family: "Ubuntu";
+  color: #353535;
+  margin: 2% 0%;
+  text-align: center;
+  font-weight: 300;
+}
+#contact .contact-form .form-presentation span {
+  font-family: "Roboto";
+  font-weight: 300;
+}
+#contact .contact-form .form-presentation span a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #2770ce;
+}
+#contact .contact-form .form {
+  width: 100%;
+  float: left;
+}
+#contact .contact-form .form .half-area {
+  width: 49%;
+  float: left;
+  padding: 8px 0%;
+}
+#contact .contact-form .form .half-area input {
+  width: 100%;
+  float: left;
+  padding: 15px 5px;
+  font-family: "Ubuntu";
+  color: #6e6e6e;
+  font-size: 0.9em;
+  border: solid 1px #6e6e6e;
+}
+#contact .contact-form .form .half-area input:hover,
+#contact .contact-form .form .half-area input:focus {
+  border: solid 1px #2770ce;
+  box-shadow: 0px 0px 2px #2770ce;
+}
+#contact .contact-form .form .left {
+  margin-right: 1%;
+}
+#contact .contact-form .form .right {
+  margin-left: 1%;
+}
+#contact .contact-form .form .whole-area {
+  width: 100%;
+  float: left;
+  padding: 8px 0%;
+}
+#contact .contact-form .form .whole-area input,
+#contact .contact-form .form .whole-area textarea {
+  width: 100%;
+  float: left;
+  padding: 15px 5px;
+  font-family: "Ubuntu";
+  color: #6e6e6e;
+  font-size: 0.9em;
+  border: solid 1px #6e6e6e;
+}
+#contact .contact-form .form .whole-area input:hover,
+#contact .contact-form .form .whole-area textarea:hover,
+#contact .contact-form .form .whole-area input:focus,
+#contact .contact-form .form .whole-area textarea:focus {
+  border: solid 1px #2770ce;
+  box-shadow: 0px 0px 2px #2770ce;
+}
+#contact .contact-form .form .button-area {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin: 8px 0px;
+}
+#contact .contact-form .form .button-area button {
+  width: 30%;
+  float: left;
+  border: solid 2px #6e6e6e;
+  color: #6e6e6e;
+  font-family: "Roboto";
+  font-size: 1.2em;
+  padding: 10px 0;
+  margin: 0px 35%;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+}
+#contact .contact-form .form .button-area button:hover {
+  width: 40%;
+  border-radius: 30px;
+  margin: 0% 30%;
+  background-color: #2770ce;
+  border: solid 2px #2770ce;
+  box-shadow: 0px 0px 5px #2770ce;
+  color: #fff;
+}
 section#home {
   width: 100%;
   float: left;
-  background-image: url("http://www.amazingwallpaperz.com/wp-content/uploads/Commercial-Airplane-Widescreen-HD-Wallpapers.jpg");
-  background-position: top center;
+  background-image: url("../img/home.jpg");
+  background-position: bottom left;
   background-size: cover;
   height: 100vh;
 }
