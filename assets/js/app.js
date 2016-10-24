@@ -18,14 +18,14 @@ $(function(){
 	var select_element = $("section#home .wrapper-blocks .block-simulator form .form-group .form-control.control-select");
 	var select_options = select_element.find('ul.options');
 	var data_parcels = {
-		'1': {
+		'veicle': {
 			1: '60x',
 			2: '48x',
 			3: '46x',
 			4: '24x',
 			5: '12x'
 		},
-		'2': {
+		'immobile': {
 			1: '60x',
 			2: '120x',
 			3: '180x',
@@ -91,6 +91,12 @@ $(function(){
 		});
 
 		replaceSelectOptions(select_hidden, select_title, options_content);
+	});
+
+	$("#simulate-parcels").on('change', function(){
+		var btn_simulate = $("section#home .wrapper-blocks .block-info .block-button button.btn-simulate");
+
+		btn_simulate.css('transform', 'scale(1.4)');
 	});
 
 })();
