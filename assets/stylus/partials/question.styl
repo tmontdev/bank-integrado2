@@ -2,13 +2,32 @@
 	width 100%
 	float left
 	background-color #f6f6f6
+	position relative
+	button
+		position absolute
+		width 200px
+		top 25px
+		padding 10px 0%
+		border-radius 25px
+		border solid 1px #353535
+		background-color #353535
+		color white
+		transition all 250ms
+		&:hover
+			background-color $blue1
+			border solid 1px $blue1
+			box-shadow 0px 0px 2px $blue1
+	.to-house
+		right 15px
+	.to-car
+		left 15px
 	.question-square
 		width 80%
 		float left
-		margin 1% 10%
 		box-shadow 0px 0px 2px #ddd
 		border-radius 5px
 		background-color white
+		display none
 		.question-title
 			width 100%
 			float left
@@ -22,16 +41,16 @@
 		.question-container
 			width 100%
 			float left
-			padding 0% 5%
+			padding 0% 7% 0%  5%
 			.question-field
 				width 100%
 				float left
 				border-bottom solid 2px #ededed
 				position relative
-				padding 5px 5px 5px 3em
+				padding 5px 10px 5px 3em
 				.query-icon
 					position absolute
-					top 2px
+					top 10px
 					left 6px
 					i
 						font-size 2.5em
@@ -39,12 +58,14 @@
 				.question-query
 					width 100%
 					float left
+					padding 10px 0%
 					span
 						width 100%
 						float left
 						font-family $font2
 						color #353535
-						font-weight: 600;
+						font-weight: 400;
+						font-size 1.2em
 					.question-answer
 						width 100%
 						float left
@@ -53,3 +74,10 @@
 							font-weight: 300
 				&:last-child
 					border-bottom none
+	.car
+		margin 1% 20% 1% 0%
+	.house
+		margin 1% 0% 1% 20%
+	.actived
+		opacity 1
+		display block

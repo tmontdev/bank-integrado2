@@ -1,4 +1,23 @@
+(function(){
+	$('.to-car').click(function(event) {
+		$('.house').removeClass('actived');
+		$('.car').addClass('actived');
+	});
+	$('.to-house').click(function(event) {
+		$('.car').removeClass('actived');
+		$('.house').addClass('actived');
+	});
+})();
+
 $(function(){
+	$('#teste').click(function(){
+	    $('#teste').slideUp();
+	});
+})();
+
+
+
+
 	var texts_apresentations = [
 		'O que acha? ^1000 Vamos <small>simplificar?</small>',
 		'Fazer o <strong>^300BUROCRÁTICO</strong>,^1000 se tornar ^300 <strong>PRÁTICO.</strong>',
