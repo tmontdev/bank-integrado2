@@ -16,7 +16,7 @@ $(function(){
 })();
 
 
-
+(function(){
 
 	var texts_apresentations = [
 		'O que acha? ^1000 Vamos <small>simplificar?</small>',
