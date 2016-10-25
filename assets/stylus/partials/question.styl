@@ -30,30 +30,21 @@
 				position relative
 				&:after
 					content " "
-					width 101%
+					width 100%
 					float left
 					position absolute
 					bottom 0
+					left 0
 					height 15px
-					background-color alpha(white, 70%)
+					background-color alpha(white, 50%)
 					transition all 500ms
 					opacity 0
 					border-top-right-radius: 5px
 					border-top-left-radius: 5px
-			.to-car
-				opacity 1
 				&:hover
 					opacity 1
 					&:after
 						opacity 1
-						left -1px
-			.to-house
-				opacity 1
-				&:hover
-					opacity 1
-					&:after
-						opacity 1
-						right -1px
 			.actived
 				background-color white
 				border solid 1px white

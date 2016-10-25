@@ -14,7 +14,7 @@ $(function(){
 });
 
 $(function(){
-	var questionHeight = $('.question-square').height();
+	var questionHeight = $('.question-square').height()+60;
 	var selectorHeight = $('.selector').height()+45;
 	$('#question').css('padding-bottom', questionHeight+'px');
 	$('.question-square').css('top', selectorHeight+'px');
