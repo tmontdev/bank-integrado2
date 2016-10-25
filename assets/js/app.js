@@ -1,21 +1,25 @@
 $(function(){
 	$('.to-car').click(function(event) {
+		$(this).addClass('actived');
+		$('.to-house').removeClass('actived');
 		$('.house').removeClass('actived');
 		$('.car').addClass('actived');
 	});
 	$('.to-house').click(function(event) {
+		$(this).addClass('actived');
+		$('.to-car').removeClass('actived');
 		$('.car').removeClass('actived');
 		$('.house').addClass('actived');
 	});
 });
 
 $(function(){
-	$('.question-field').click(function(){
-	    $(this'.question-answer').slideUp();
-	});
-});
+	var questionHeight = $('.question-square').height();
+	var selectorHeight = $('.selector').height()+45;
+	$('#question').css('padding-bottom', questionHeight+'px');
+	$('.question-square').css('top', selectorHeight+'px');
 
-
+})
 (function(){
 	/*
 	 * Texts to effect writing

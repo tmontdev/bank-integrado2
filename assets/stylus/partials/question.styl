@@ -1,83 +1,122 @@
 #question
 	width 100%
 	float left
-	background-color #f6f6f6
+	//background-color alpha(darken($blue1, 60%), 80%)
+	background-color #46a1de
 	position relative
-	button
-		position absolute
-		width 200px
-		top 25px
-		padding 10px 0%
-		border-radius 25px
-		border solid 1px #353535
-		background-color #353535
-		color white
-		transition all 250ms
-		&:hover
-			background-color $blue1
-			border solid 1px $blue1
-			box-shadow 0px 0px 2px $blue1
-	.to-house
-		right 15px
-	.to-car
-		left 15px
-	.question-square
-		width 80%
+	.selector
+		width 100%
 		float left
-		box-shadow 0px 0px 2px #ddd
-		border-radius 5px
-		background-color white
-		display none
-		.question-title
+		padding 50px 10% 0 10%
+		position relative
+		.selector-content
 			width 100%
 			float left
-			text-align center
-			padding 2% 1%
-			border-bottom solid 2px #ededed
-			span
-				font-family $font1
-				font-size 1.6em
-				color #353535
-		.question-container
-			width 100%
+			position relative
+			z-index 5
+			button
+				width 50%
+				float left
+				border-top-left-radius: 5px
+				border-top-right-radius: 5px
+				background-color transparent
+				border none
+				color white
+				font-family $font2
+				font-weight: 300
+				font-size 1.5em
+				padding 2% 0%
+				transition all 500ms
+				position relative
+				&:after
+					content " "
+					width 101%
+					float left
+					position absolute
+					bottom 0
+					height 15px
+					background-color alpha(white, 70%)
+					transition all 500ms
+					opacity 0
+					border-top-right-radius: 5px
+					border-top-left-radius: 5px
+			.to-car
+				opacity 1
+				&:hover
+					opacity 1
+					&:after
+						opacity 1
+						left -1px
+			.to-house
+				opacity 1
+				&:hover
+					opacity 1
+					&:after
+						opacity 1
+						right -1px
+			.actived
+				background-color white
+				border solid 1px white
+				color $blue1
+				&:after
+					background-color white
+					border-radius 0
+		.question-square
+			width 80%
 			float left
-			padding 0% 7% 0%  5%
-			.question-field
+			box-shadow 0px 0px 2px #ddd
+			border-radius 5px
+			background-color white
+			margin 0% 10%
+			position absolute
+			left 0
+			display none
+			.question-title
 				width 100%
 				float left
+				text-align center
+				padding 2% 1%
 				border-bottom solid 2px #ededed
-				position relative
-				padding 5px 10px 5px 3em
-				.query-icon
-					position absolute
-					top 10px
-					left 6px
-					i
-						font-size 2.5em
-						color $blue1
-				.question-query
+				span
+					font-family $font1
+					font-size 1.6em
+					color #353535
+			.question-container
+				width 100%
+				float left
+				padding 0% 7% 0%  5%
+				.question-field
 					width 100%
 					float left
-					padding 10px 0%
-					span
+					border-bottom solid 2px #ededed
+					position relative
+					padding 5px 10px 5px 3em
+					.query-icon
+						position absolute
+						top 10px
+						left 6px
+						i
+							font-size 2.5em
+							color $blue1
+					.question-query
 						width 100%
 						float left
-						font-family $font2
-						color #353535
-						font-weight: 400;
-						font-size 1.2em
-					.question-answer
-						width 100%
-						float left
-						padding 1% 0%
+						padding 10px 0%
 						span
-							font-weight: 300
-				&:last-child
-					border-bottom none
-	.car
-		margin 1% 20% 1% 0%
-	.house
-		margin 1% 0% 1% 20%
-	.actived
-		opacity 1
-		display block
+							width 100%
+							float left
+							font-family $font2
+							color #353535
+							font-weight: 400;
+							font-size 1.2em
+						.question-answer
+							width 100%
+							float left
+							padding 1% 0%
+							span
+								font-weight: 300
+					&:last-child
+						border-bottom none
+		.actived
+			opacity 1
+			display block

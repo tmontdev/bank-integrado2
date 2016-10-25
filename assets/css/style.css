@@ -331,82 +331,136 @@ section#about .about-item.actived {
 #question {
   width: 100%;
   float: left;
-  background-color: #f6f6f6;
+  background-color: #46a1de;
   position: relative;
 }
-#question button {
-  position: absolute;
-  width: 200px;
-  top: 25px;
-  padding: 10px 0%;
-  border-radius: 25px;
-  border: solid 1px #353535;
-  background-color: #353535;
+#question .selector {
+  width: 100%;
+  float: left;
+  padding: 50px 10% 0 10%;
+  position: relative;
+}
+#question .selector .selector-content {
+  width: 100%;
+  float: left;
+  position: relative;
+  z-index: 5;
+}
+#question .selector .selector-content button {
+  width: 50%;
+  float: left;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: transparent;
+  border: none;
   color: #fff;
-  -webkit-transition: all 250ms;
-  transition: all 250ms;
-  -moz-transition: all 250ms;
-  -o-transition: all 250ms;
-  -ms-transition: all 250ms;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.5em;
+  padding: 2% 0%;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  position: relative;
 }
-#question button:hover {
-  background-color: #2770ce;
-  border: solid 1px #2770ce;
-  box-shadow: 0px 0px 2px #2770ce;
+#question .selector .selector-content button:after {
+  content: " ";
+  width: 101%;
+  float: left;
+  position: absolute;
+  bottom: 0;
+  height: 15px;
+  background-color: rgba(255,255,255,0.7);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  opacity: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
-#question .to-house {
-  right: 15px;
+#question .selector .selector-content .to-car {
+  opacity: 1;
 }
-#question .to-car {
-  left: 15px;
+#question .selector .selector-content .to-car:hover {
+  opacity: 1;
 }
-#question .question-square {
+#question .selector .selector-content .to-car:hover:after {
+  opacity: 1;
+  left: -1px;
+}
+#question .selector .selector-content .to-house {
+  opacity: 1;
+}
+#question .selector .selector-content .to-house:hover {
+  opacity: 1;
+}
+#question .selector .selector-content .to-house:hover:after {
+  opacity: 1;
+  right: -1px;
+}
+#question .selector .selector-content .actived {
+  background-color: #fff;
+  border: solid 1px #fff;
+  color: #2770ce;
+}
+#question .selector .selector-content .actived:after {
+  background-color: #fff;
+  border-radius: 0;
+}
+#question .selector .question-square {
   width: 80%;
   float: left;
   box-shadow: 0px 0px 2px #ddd;
   border-radius: 5px;
   background-color: #fff;
+  margin: 0% 10%;
+  position: absolute;
+  left: 0;
   display: none;
 }
-#question .question-square .question-title {
+#question .selector .question-square .question-title {
   width: 100%;
   float: left;
   text-align: center;
   padding: 2% 1%;
   border-bottom: solid 2px #ededed;
 }
-#question .question-square .question-title span {
+#question .selector .question-square .question-title span {
   font-family: "Ubuntu";
   font-size: 1.6em;
   color: #353535;
 }
-#question .question-square .question-container {
+#question .selector .question-square .question-container {
   width: 100%;
   float: left;
   padding: 0% 7% 0% 5%;
 }
-#question .question-square .question-container .question-field {
+#question .selector .question-square .question-container .question-field {
   width: 100%;
   float: left;
   border-bottom: solid 2px #ededed;
   position: relative;
   padding: 5px 10px 5px 3em;
 }
-#question .question-square .question-container .question-field .query-icon {
+#question .selector .question-square .question-container .question-field .query-icon {
   position: absolute;
   top: 10px;
   left: 6px;
 }
-#question .question-square .question-container .question-field .query-icon i {
+#question .selector .question-square .question-container .question-field .query-icon i {
   font-size: 2.5em;
   color: #2770ce;
 }
-#question .question-square .question-container .question-field .question-query {
+#question .selector .question-square .question-container .question-field .question-query {
   width: 100%;
   float: left;
   padding: 10px 0%;
 }
-#question .question-square .question-container .question-field .question-query span {
+#question .selector .question-square .question-container .question-field .question-query span {
   width: 100%;
   float: left;
   font-family: "Roboto";
@@ -414,24 +468,18 @@ section#about .about-item.actived {
   font-weight: 400;
   font-size: 1.2em;
 }
-#question .question-square .question-container .question-field .question-query .question-answer {
+#question .selector .question-square .question-container .question-field .question-query .question-answer {
   width: 100%;
   float: left;
   padding: 1% 0%;
 }
-#question .question-square .question-container .question-field .question-query .question-answer span {
+#question .selector .question-square .question-container .question-field .question-query .question-answer span {
   font-weight: 300;
 }
-#question .question-square .question-container .question-field:last-child {
+#question .selector .question-square .question-container .question-field:last-child {
   border-bottom: none;
 }
-#question .car {
-  margin: 1% 20% 1% 0%;
-}
-#question .house {
-  margin: 1% 0% 1% 20%;
-}
-#question .actived {
+#question .selector .actived {
   opacity: 1;
   display: block;
 }
