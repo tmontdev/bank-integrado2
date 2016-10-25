@@ -183,3 +183,15 @@ $(function(){
 	makeMenu();
 	$(window).scroll(makeMenu);
 })();
+
+(function(){
+	var contact_social = $("section#contact .contact-social");
+	var contact_form = $("section#contact .contact-form");
+
+	if(contact_form.outerHeight() <= contact_social.outerHeight())
+		return false;
+
+	var contact_diff = parseFloat(contact_form.outerHeight()) - parseFloat(contact_social.outerHeight());
+
+	contact_social.css('padding-bottom', (contact_diff+60)+'px');
+})();
