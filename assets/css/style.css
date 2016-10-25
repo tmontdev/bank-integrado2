@@ -365,6 +365,8 @@ section#about .about-item.actived {
   -o-transition: all 500ms;
   -ms-transition: all 500ms;
   position: relative;
+  cursor: pointer;
+  outline: 0;
 }
 #question .selector .selector-content button:after {
   content: " ";
@@ -457,6 +459,7 @@ section#about .about-item.actived {
   color: #353535;
   font-weight: 400;
   font-size: 1.2em;
+  cursor: pointer;
 }
 #question .selector .question-square .question-container .question-field .question-query .question-answer {
   width: 100%;
