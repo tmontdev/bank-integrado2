@@ -13,13 +13,34 @@ $(function(){
 	});
 });
 
+//tudo certo
 $(function(){
-	var questionHeight = $('.question-square').height()+60;
-	var selectorHeight = $('.selector').height()+45;
-	$('#question').css('padding-bottom', questionHeight+'px');
-	$('.question-square').css('top', selectorHeight+'px');
+	$('.question-answer').slideUp(250, function() {
+	});
 
-})
+	$( ".question-field" ).click(function(event) {
+		if ($(this).hasClass('active')) {
+			$(this).find('.question-answer').slideUp(250, function() {
+			});
+			$(this).removeClass('active');
+			$(this).find('.query-icon').html('<i class="fa fa-question-circle" aria-hidden="true"></i>').removeClass('animated').removeClass('fadeIn');
+		}
+		else {
+			$('.query-icon').each(function() {
+				$(this).html('<i class="fa fa-question-circle" aria-hidden="true"></i>').removeClass('animated').removeClass('fadeIn');
+			});
+			$( ".question-field" ).removeClass('active');
+			$('.question-answer').slideUp(250, function() {
+			});
+			$(this).addClass('active').find( ".question-answer" ).slideDown(250, function() {
+			});
+			$(this).find('.query-icon').html('<i class="fa fa-info-circle" aria-hidden="true"></i>').addClass('animated').addClass('fadeIn');
+		}
+	});
+});
+
+
+
 (function(){
 	/*
 	 * Texts to effect writing
