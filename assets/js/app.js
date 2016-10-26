@@ -26,13 +26,13 @@ $(function(){
 
 			return true;
 		}
-		
+
 		$(".query-icon i.fa-info").removeClass('fa-info').addClass('fa-question');
 		$(".question-field").removeClass('active');
 		$('.question-answer').slideUp(250);
 
 		$(this).addClass('active').find( ".question-answer" ).slideDown(250);
-		$(this).find('.query-icon i').removeClass('fa-question').addClass('fa-info');		
+		$(this).find('.query-icon i').removeClass('fa-question').addClass('fa-info');
 	});
 });
 
@@ -269,3 +269,7 @@ $(function(){
 		$('.steps').addClass('active').addClass('animated').addClass('fadeInUp');
 	});
 });
+
+
+var wow = new WOW();
+wow.init();
