@@ -273,13 +273,14 @@ footer#footer .content-footer .block-buttons > a {
   font-size: 20px;
 }
 footer#footer .content-footer .block-buttons a.btn-simulate {
-  color: #fff;
+  color: #444;
   padding: 10px 40px;
   border-radius: 4px;
-  background-color: #2770ce;
+  background-color: rgba(255,255,255,0.9);
 }
 footer#footer .content-footer .block-buttons a.btn-simulate:hover {
-  background-color: #1f5aa5;
+  color: #fff;
+  background-color: #2770ce;
 }
 footer#footer .content-footer .block-buttons a.btn-about {
   border-radius: 0;
