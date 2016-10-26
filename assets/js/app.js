@@ -89,6 +89,8 @@ $(function(){
 		$(this).toggleClass("active");
 	});
 
+	$("#simulate-price").maskMoney({thousands:'.', decimal:','});
+
 	var replaceSelectOptions = function(select_hidden, select_title, options_content){
 		options_content.html('');
 
