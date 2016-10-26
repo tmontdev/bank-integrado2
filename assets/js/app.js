@@ -1,45 +1,59 @@
 $(function(){
-	$('.to-car').click(function(event) {
+	$(".to-question-square").click(function(e){
+		if($(this).hasClass("actived"))
+			return false;
+
+		$(".to-question-square").removeClass("actived");
+		$(".question-square").removeClass("actived");
+
+		var target = $(this).data('target');
+
 		$(this).addClass('actived');
-		$('.to-house').removeClass('actived');
-		$('.house').removeClass('actived');
-		$('.car').addClass('actived');
-	});
-	$('.to-house').click(function(event) {
-		$(this).addClass('actived');
-		$('.to-car').removeClass('actived');
-		$('.car').removeClass('actived');
-		$('.house').addClass('actived');
+		$(target).addClass('actived');
 	});
 });
 
 //tudo certo
 $(function(){
-	$('.question-answer').slideUp(250, function() {
-	});
+	$('.question-answer').slideUp(250);
 
-	$( ".question-field" ).click(function(event) {
-		if ($(this).hasClass('active')) {
-			$(this).find('.question-answer').slideUp(250, function() {
-			});
-			$(this).removeClass('active');
-			$(this).find('.query-icon').html('<i class="fa fa-question-circle" aria-hidden="true"></i>').removeClass('animated').removeClass('fadeIn');
+	$(".question-field").click(function(event) {
+
+		if($(this).hasClass("active")){
+			$(this).find('.question-answer').slideUp(250);
+			$(this).removeClass("active");
+			$(this).find('.query-icon i').removeClass('fa-info').addClass('fa-question');
+
+			return true;
 		}
-		else {
-			$('.query-icon').each(function() {
-				$(this).html('<i class="fa fa-question-circle" aria-hidden="true"></i>').removeClass('animated').removeClass('fadeIn');
-			});
-			$( ".question-field" ).removeClass('active');
-			$('.question-answer').slideUp(250, function() {
-			});
-			$(this).addClass('active').find( ".question-answer" ).slideDown(250, function() {
-			});
-			$(this).find('.query-icon').html('<i class="fa fa-info-circle" aria-hidden="true"></i>').addClass('animated').addClass('fadeIn');
-		}
+		
+		$(".query-icon i.fa-info").removeClass('fa-info').addClass('fa-question');
+		$(".question-field").removeClass('active');
+		$('.question-answer').slideUp(250);
+
+		$(this).addClass('active').find( ".question-answer" ).slideDown(250);
+		$(this).find('.query-icon i').removeClass('fa-question').addClass('fa-info');		
 	});
 });
 
+(function(){
+	/**
+	 * scroll on a.page-scroll clicked
+	*/
+	$("a.page-scroll").click(function(){
+		var $anchor = $($(this).attr('href'));
+		var target_top = $anchor.offset().top;
+		var header_top = $("header#header .block-menu").outerHeight()-5;
 
+		if($("header#header").hasClass("nice-header") == false)
+			header_top = header_top-15;
+
+
+		$('html, body').stop().animate({
+			scrollTop: target_top - header_top,
+		}, 1250, 'easeInOutExpo')
+	});
+})();
 
 (function(){
 	/*

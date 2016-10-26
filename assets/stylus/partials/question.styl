@@ -1,10 +1,9 @@
 #question
 	width 100%
 	float left
-	//background-color alpha(darken($blue1, 60%), 80%)
-	background-color #46a1de
+	background-color: colors.blue1
 	position relative
-	padding-bottom 2%
+	padding 30px 0 60px 0
 	.selector
 		width 100%
 		float left
@@ -66,16 +65,19 @@
 				width 100%
 				float left
 				text-align center
-				padding 2% 1%
+				padding 25px 0
 				border-bottom solid 2px #ededed
-				span
-					font-family $font1
-					font-size 1.6em
-					color $blue1
+				> h2
+					font-family 'Roboto Condensed', sans-serif
+					color: colors.blue1
+					font-size 28px
+					font-weight normal
+					padding 0
+					margin 0
 			.question-container
 				width 100%
 				float left
-				padding 0% 7% 0%  5%
+				padding 20px 5% 40px 5%
 				.question-field
 					width 100%
 					float left
@@ -84,30 +86,43 @@
 					padding 5px 10px 5px 3em
 					.query-icon
 						position absolute
-						top 10px
-						left 6px
+						top 0px
+						left -5px
 						transition all 250ms
 						i
-							font-size 2.5em
-							color $blue1
+							font-size 22px
+							color #FFF
+							width 40px
+							height @width
+							line-height @height
+							text-align center
+							background-color: colors.blue1
+							border-radius 50%
 					.question-query
 						width 100%
 						float left
-						padding 10px 0%
-						span
+						padding 0 0 12px 0
+						> h4
 							width 100%
 							float left
-							font-family $font2
-							color #353535
+							font-family 'Roboto Condensed', sans-serif
+							color lightness(#353535, 20%)
 							font-weight: 400;
 							font-size 1.2em
 							cursor pointer
+							padding 0
+							margin 0
 						.question-answer
 							width 100%
 							float left
-							padding 1% 0%
-							span
-								font-weight: 300
+							padding 10px 0
+							> p
+								font-weight 300
+								font-size 15px
+								color lightness(#353535, 10%)
+								font-family 'Open Sans', sans-serif
+								padding 0
+								margin 0
 					&:last-child
 						border-bottom none
 		.actived
