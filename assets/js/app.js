@@ -1,41 +1,38 @@
 $(function(){
-	$('.to-car').click(function(event) {
+	$(".to-question-square").click(function(e){
+		if($(this).hasClass("actived"))
+			return false;
+
+		$(".to-question-square").removeClass("actived");
+		$(".question-square").removeClass("actived");
+
+		var target = $(this).data('target');
+
 		$(this).addClass('actived');
-		$('.to-house').removeClass('actived');
-		$('.house').removeClass('actived');
-		$('.car').addClass('actived');
-	});
-	$('.to-house').click(function(event) {
-		$(this).addClass('actived');
-		$('.to-car').removeClass('actived');
-		$('.car').removeClass('actived');
-		$('.house').addClass('actived');
+		$(target).addClass('actived');
 	});
 });
 
 //tudo certo
 $(function(){
-	$('.question-answer').slideUp(250, function() {
-	});
+	$('.question-answer').slideUp(250);
 
-	$( ".question-field" ).click(function(event) {
-		if ($(this).hasClass('active')) {
-			$(this).find('.question-answer').slideUp(250, function() {
-			});
-			$(this).removeClass('active');
-			$(this).find('.query-icon').html('<i class="fa fa-question-circle" aria-hidden="true"></i>').removeClass('animated').removeClass('fadeIn');
+	$(".question-field").click(function(event) {
+
+		if($(this).hasClass("active")){
+			$(this).find('.question-answer').slideUp(250);
+			$(this).removeClass("active");
+			$(this).find('.query-icon i').removeClass('fa-info').addClass('fa-question');
+
+			return true;
 		}
-		else {
-			$('.query-icon').each(function() {
-				$(this).html('<i class="fa fa-question-circle" aria-hidden="true"></i>').removeClass('animated').removeClass('fadeIn');
-			});
-			$( ".question-field" ).removeClass('active');
-			$('.question-answer').slideUp(250, function() {
-			});
-			$(this).addClass('active').find( ".question-answer" ).slideDown(250, function() {
-			});
-			$(this).find('.query-icon').html('<i class="fa fa-info-circle" aria-hidden="true"></i>').addClass('animated').addClass('fadeIn');
-		}
+		
+		$(".query-icon i.fa-info").removeClass('fa-info').addClass('fa-question');
+		$(".question-field").removeClass('active');
+		$('.question-answer').slideUp(250);
+
+		$(this).addClass('active').find( ".question-answer" ).slideDown(250);
+		$(this).find('.query-icon i').removeClass('fa-question').addClass('fa-info');		
 	});
 });
 
