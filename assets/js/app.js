@@ -39,7 +39,24 @@ $(function(){
 	});
 });
 
+(function(){
+	/**
+	 * scroll on a.page-scroll clicked
+	*/
+	$("a.page-scroll").click(function(){
+		var $anchor = $($(this).attr('href'));
+		var target_top = $anchor.offset().top;
+		var header_top = $("header#header .block-menu").outerHeight()-5;
 
+		if($("header#header").hasClass("nice-header") == false)
+			header_top = header_top-15;
+
+
+		$('html, body').stop().animate({
+			scrollTop: target_top - header_top,
+		}, 1250, 'easeInOutExpo')
+	});
+})();
 
 (function(){
 	/*
