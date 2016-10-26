@@ -81,15 +81,38 @@
 										<option value="5">12x</option>
 									</select>
 								</div>
+								<div class="form-group">
+									<span class="form-error" id="form-error-show">
+										Ocorreu um erro
+									</span>
+								</div>
 							</form>
 						</div>
 						<div class="block-info">
-							<h1>O Suporte para seus sonhos</h1>
-							<div class="block-apresentation">
-								<span class="text"></span>
+							<div id="block-info-welcome">						
+								<h1>O Suporte para seus sonhos</h1>
+								<div class="block-apresentation">
+									<span class="text"></span>
+								</div>
+								<div class="block-button">
+									<button class="btn-simulate" id="btn-simulate">Simular</button>
+								</div>
 							</div>
-							<div class="block-button">
-								<button class="btn-simulate">Simular</button>
+							<div id="block-info-result" style="display: none;">
+								<h2 class="result">
+									O valor da prestação é de: 
+									<span id="result-simulator"></span>
+								</h2>
+								<div class="block-button">
+									<button class="btn-simulate" id="btn-simulate-again">
+										<i class="lnr lnr-sync"></i>
+										Simular novamente
+									</button>
+									<br>
+									<button class="btn-contact" id="btn-simulate-contact">
+										Entrar em contato <i class="lnr lnr-envelope"></i>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -472,7 +495,7 @@
 						</p>
 						<form class="form" method="post">
 							<div class="half-area left">
-								<input type="text" class="form-control" name="name" placeholder="Digite seu nome">
+								<input type="text" class="form-control" name="name" placeholder="Digite seu nome" id="contact-name">
 							</div>
 							<div class="half-area right">
 								<input type="text" class="form-control" name="phone" placeholder="Digite seu telefone">
@@ -481,7 +504,7 @@
 								<input type="email" class="form-control" name="email" placeholder="Digite seu email">
 							</div>
 							<div class="half-area">
-								<textarea class="form-control" rows="5" placeholder="Digite sua mensagem"></textarea>
+								<textarea class="form-control" rows="5" placeholder="Digite sua mensagem" id="contact-message"></textarea>
 							</div>
 							<div class="half-area text-right pad-top">
 								<button class="btn-send" type="submit">
@@ -540,6 +563,8 @@
 
 		<script src="assets/js/jquery-3.1.1.min.js" charset="utf-8"></script>
 		<script src="assets/js/jquery.maskMoney.min.js" charset="utf-8"></script>
+		<script src="assets/js/jquery.easing.min.js" charset="utf-8"></script>
+		<script src="assets/js/jquery.easing.compability.min.js" charset="utf-8"></script>
 		<script src="assets/js/typed.js" charset="utf-8"></script>
 		<script src="assets/js/app.js" charset="utf-8"></script>
 
