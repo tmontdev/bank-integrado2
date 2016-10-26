@@ -358,6 +358,11 @@ footer#footer .content-footer .footer-social ul.list-social li > a:hover {
   width: 100%;
   float: left;
   background-color: #ededed;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
 }
 #getit .getit-presentation {
   width: 100%;
@@ -368,6 +373,97 @@ footer#footer .content-footer .footer-social ul.list-social li > a:hover {
   color: #1b4e90;
   font-family: "Ubuntu";
   font-size: 3em;
+  margin-bottom: 10px;
+}
+#getit .getit-presentation span {
+  color: #6e6e6e;
+  font-family: "Roboto";
+  width: 100%;
+  float: left;
+  font-size: 1.5em;
+  margin: 1% 0%;
+}
+#getit .getit-presentation .discover {
+  width: 20%;
+  height: 80px;
+  color: #1b4e90;
+  font-family: "Ubuntu";
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+  -ms-transition: all 500ms;
+  font-size: 1.8em;
+  margin: 1% 0%;
+  background-color: #fff;
+  border-radius: 0px;
+  border: solid 1px #1b4e90;
+  text-transform: uppercase;
+}
+#getit .getit-presentation .discover:hover {
+  width: 25%;
+  border-radius: 25px;
+  color: #fff;
+  background-color: #1b4e90;
+  box-shadow: 0px 0px 5px #1b4e90;
+}
+#getit .getit-presentation .actived {
+  width: 25%;
+  margin: 0% 37.5%;
+  border-radius: 25px;
+  color: #fff;
+  background-color: #1b4e90;
+  box-shadow: 0px 0px 5px #1b4e90;
+}
+#getit .steps {
+  width: 100%;
+  float: left;
+  display: none;
+}
+#getit .steps .step {
+  width: 25%;
+  float: left;
+  padding: 0.5%;
+  text-align: center;
+}
+#getit .steps .step .step-content {
+  width: 100%;
+  float: left;
+  border-radius: 10px;
+  padding: 2%;
+}
+#getit .steps .step .step-content .step-presentation {
+  width: 100%;
+  float: left;
+}
+#getit .steps .step .step-content .step-presentation .step-icon {
+  width: 100%;
+  float: left;
+  margin: 2% 0%;
+}
+#getit .steps .step .step-content .step-presentation .step-icon i {
+  color: #1b4e90;
+  font-size: 3em;
+  padding: 1em;
+  border-radius: 50%;
+  border: solid 1px #1b4e90;
+}
+#getit .steps .step .step-content .step-presentation span {
+  color: #1b4e90;
+  font-family: "Ubuntu";
+  font-size: 1.4em;
+  margin: 5% 0;
+}
+#getit .steps .step .step-content .step-explanation {
+  width: 100%;
+  float: left;
+  color: #4a4a4a;
+  font-size: 1.2em;
+  font-family: "Roboto";
+  padding: 5% 0%;
+}
+#getit .active {
+  display: block;
 }
 header#header {
   width: 100%;
