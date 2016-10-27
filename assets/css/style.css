@@ -418,13 +418,14 @@ footer#footer .content-footer .footer-social ul.list-social li > a:hover {
 #getit .steps {
   width: 100%;
   float: left;
-  display: none;
+  display: block;
 }
 #getit .steps .step {
   width: 25%;
   float: left;
   padding: 0.5%;
   text-align: center;
+  display: block;
 }
 #getit .steps .step .step-content {
   width: 100%;
@@ -464,9 +465,6 @@ footer#footer .content-footer .footer-social ul.list-social li > a:hover {
   font-size: 1.2em;
   font-family: "Roboto";
   padding: 5% 0%;
-}
-#getit .active {
-  display: block;
 }
 header#header {
   width: 100%;
