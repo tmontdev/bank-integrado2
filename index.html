@@ -60,6 +60,8 @@
 									<div class="form-control control-select" data-select="#simulate-type" id="simulate-type-control">
 										<div class="title">Veículos</div>
 										<ul class="options">
+											<li data-value="veicle">Veículo</li>
+											<li data-value="immobile">Imóvel</li>
 										</ul>
 									</div>
 									<select class="control-hidden" id="simulate-type">
@@ -71,15 +73,31 @@
 									<span class="form-identifier to-select">Parcelas</span>
 									<div class="form-control control-select" data-select="#simulate-parcels" id="simulate-parcels-control">
 										<div class="title">60x</div>
-										<ul class="options">
+										<ul class="options options-veicle">
+											<li data-value="1">60x</li>
+											<li data-value="2">48x</li>
+											<li data-value="3">36x</li>
+											<li data-value="4">24x</li>
+											<li data-value="5">12x</li>
+										</ul>
+										<ul class="options options-immobile" style="display:none;">
+											<li data-value="1">240x</li>
+											<li data-value="2">180x</li>
+											<li data-value="3">120x</li>
+											<li data-value="4">60x</li>
 										</ul>
 									</div>
 									<select class="control-hidden" id="simulate-parcels">
-										<option value="1">60x</option>
-										<option value="2">48x</option>
-										<option value="3">36x</option>
-										<option value="4">24x</option>
-										<option value="5">12x</option>
+										<option value="veicle-1">60x</option>
+										<option value="veicle-2">48x</option>
+										<option value="veicle-3">36x</option>
+										<option value="veicle-4">24x</option>
+										<option value="veicle-5">12x</option>
+
+										<option value="immobile-1">240x</option>
+										<option value="immobile-2">180x</option>
+										<option value="immobile-3">120x</option>
+										<option value="immobile-4">60x</option>
 									</select>
 								</div>
 								<div class="form-group">

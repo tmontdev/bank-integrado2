@@ -3,7 +3,8 @@
 		this.buttons = {
 			simulate: $("#btn-simulate"),
 			simulateAgain: $("#btn-simulate-again"),
-			contact: $("#btn-simulate-contact")
+			contact: $("#btn-simulate-contact"),
+			controlSelect: $("section#home .control-select")
 		};
 		this.inputs = {
 			price: $("#simulate-price"),
@@ -12,7 +13,7 @@
 		};
 		this.areas = {
 			error: $("#form-error-show"),
-			resultPrice: $("#result-simulator")
+			resultPrice: $("#result-simulator"),
 		};
 		this.blocks = {
 			infoWelcome: $("#block-info-welcome"),
@@ -24,11 +25,21 @@
 			price: 0,
 			parcels: 0
 		};
+		this.controlSelect = {
+			controls : {
+				type: $("#simulate-type-control"),
+				parcels: $("#simulate-parcels-control")
+			},
+			selects: {
+				type: $("#simulate-type"),
+				parcels: $("#simulate-parcels")
+			}
+		};
 		this.dataParcels = {
 			'veicle': {
 				'60x': 0.033994,
 				'48x': 0.037558,
-				'46x': 0.043910,
+				'36x': 0.043910,
 				'24x': 0.057281,
 				'12x': 0.098790
 			},
@@ -46,6 +57,8 @@
 	appSimulator.prototype = {
 		init: function(){
 			this.addListener();
+
+			$("#simulate-price").maskMoney({thousands:'.', decimal:','});
 		},
 
 		addListener: function(){
@@ -61,6 +74,22 @@
 
 			this.buttons.contact.click(function(){
 				return _this.btnContactClick(this);
+			});
+
+			this.buttons.controlSelect.click(function(){
+				return _this.btnControlSelectClick(this);
+			});
+
+			this.buttons.controlSelect.find('li').click(function(){
+				return _this.btnControlSelectLiClick(this);
+			});
+
+			this.controlSelect.controls.type.find('li').click(function(){
+				return _this.controlSelectTypeLiClick(this);
+			});
+
+			this.controlSelect.controls.parcels.find('li').click(function(){
+				return _this.controlSelectParcelsLiClick(this);
 			});
 		},
 
@@ -247,9 +276,83 @@ Parcelas: {replace_parcel}\n\
 				parcels: datas.parcel
 			};
 
-			return parcel_result;
+			return parcel_result.toFixed(2);
 		},
 
+
+		/**
+		 * Função para quando clicar
+		 * no .control-select
+		 * do simulador
+		*/
+
+		btnControlSelectClick: function(select){
+			if($(select).hasClass("active")){
+				$(select).removeClass("active");
+			}else{
+				this.buttons.controlSelect.removeClass("active");
+				$(select).addClass("active");
+			}
+		},
+		
+		/**
+		 * Função para quando clicar
+		 * no .control-select li
+		 * mudar o title do .control-select
+		 * do simulador
+		*/
+
+		btnControlSelectLiClick: function(li){
+			var option_value = $(li).data('value');
+			var option_name = $(li).text();
+
+			var select_control = $(li).parents(".form-control.control-select");
+
+			this.changeTitleControl(select_control, option_name);
+		},
+
+		/**
+		 * Função para quando clicar 
+		 * no li do controlSelect -> control -> type
+		*/
+		controlSelectTypeLiClick: function(li){
+			var option_value = $(li).data('value');
+			this.changeOptionSelect(this.controlSelect.selects.type, option_value);
+
+			var controlSelect = this.controlSelect.controls.parcels;
+			var parcelsOptions = controlSelect.find("ul.options").hide().filter(".options-"+option_value);
+			parcelsOptions.show();
+
+			var firstLi = parcelsOptions.find("li").eq(0);
+			var optionSelect = option_value+"-"+firstLi.data('value');
+
+			this.changeTitleControl(controlSelect, firstLi.text());
+			this.changeOptionSelect(this.controlSelect.selects.parcels, optionSelect);
+		},
+
+		/**
+		 * Funçã para quando clicar
+		 * no li do controlSelect -> control -> parcels
+		*/
+		controlSelectParcelsLiClick: function(li){
+			var typeValue = this.controlSelect.selects.type.val();
+			var optionValue = $(li).data('value');
+			var optionSelect = typeValue+"-"+optionValue;
+
+			this.changeOptionSelect(this.controlSelect.selects.parcels, optionSelect);
+		},
+
+		/**
+		 * Funções para
+		 * manipular os controls
+		 * do simulador
+		*/
+		changeTitleControl: function(control, text){
+			control.find('.title').text(text);
+		},
+		changeOptionSelect: function(select, val){
+			select.val(val).change();
+		}
 	};
 
 
