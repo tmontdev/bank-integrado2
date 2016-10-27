@@ -662,8 +662,6 @@ header#header.nice-header .block-menu .header-social ul li > a:hover {
 #question .selector .selector-content {
   width: 100%;
   float: left;
-  position: relative;
-  z-index: 5;
 }
 #question .selector .selector-content button {
   width: 50%;
