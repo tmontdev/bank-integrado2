@@ -263,13 +263,5 @@ $(function(){
 	contact_social.css('padding-bottom', (contact_diff+60)+'px');
 })();
 
-$(function(){
-	$('.discover').click(function(event) {
-		$(this).addClass('actived');
-		$('.steps').addClass('active').addClass('animated').addClass('fadeInUp');
-	});
-});
-
-
 var wow = new WOW();
 wow.init();
