@@ -48,6 +48,10 @@
 				'120x': 0.0249527,
 				'180x': 0.0219355,
 				'240x': 0.0204323
+			},
+			'minValues': {
+				'immobile': 60000.00,
+				'veicle': 5000.00
 			}
 		};
 
@@ -204,9 +208,14 @@ Parcelas: {replace_parcel}\n\
 		 * o simulador
 		*/
 		checkPrice: function(prices){
-			var message_error = "Seu crédito tem que ser maior que R$80.000,00";
 			var price_val = prices.val;
 			var price_int = prices.int;
+
+			var typeSelected = this.controlSelect.selects.type.val();
+			var minValue = this.dataParcels.minValues[typeSelected];
+			var minValueReal = this.priceToReal(minValue.toFixed(2));
+
+			var message_error = "Seu crédito tem que ser maior que "+minValueReal;
 
 			if(!price_val || !price_int)
 				return this.showError(message_error);
@@ -217,7 +226,7 @@ Parcelas: {replace_parcel}\n\
 			if(price_val == "0,00" || price_int == "0")
 				return this.showError(message_error);
 
-			if(price_int < 80000)
+			if(price_int < minValue)
 				return this.showError(message_error);
 
 			return this.hideError();	
