@@ -223,12 +223,12 @@ footer#footer {
   width: 100%;
   float: left;
   height: 90vh;
-  background-image: url("http://downloadwallpaper.org/wp-content/uploads/2016/05/Sunrise-wallpaper6.jpg");
+  background-image: url("../img/footer.jpg");
   background-size: cover;
   background-position: center center;
 }
 footer#footer .overlay {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.2);
   height: 100%;
   width: 100%;
   float: left;
@@ -281,23 +281,6 @@ footer#footer .content-footer .block-buttons a.btn-simulate {
 footer#footer .content-footer .block-buttons a.btn-simulate:hover {
   color: #fff;
   background-color: #2770ce;
-}
-footer#footer .content-footer .block-buttons a.btn-about {
-  border-radius: 0;
-  padding: 10px;
-  border-bottom: 1px solid rgba(255,255,255,0.8);
-  float: right;
-  color: rgba(255,255,255,0.8);
-  font-weight: 100;
-}
-footer#footer .content-footer .block-buttons a.btn-about i {
-  position: relative;
-  top: 3px;
-  margin-left: 4px;
-}
-footer#footer .content-footer .block-buttons a.btn-about:hover {
-  color: #fff;
-  border-bottom-color: #fff;
 }
 footer#footer .content-footer .footer-social {
   width: 100%;
