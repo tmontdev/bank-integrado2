@@ -893,16 +893,16 @@ section#contact .contact-form form.form .half-area button.btn-send:hover {
 section#home {
   width: 100%;
   float: left;
-  background-image: url("http://oneclickpixels.com/investable/assets/images/bg-imgs/bg-img-3.jpg");
-  background-position: center center;
-  background-size: cover;
+  background-color: rgba(0,5,71,0.7);
   height: 100vh;
 }
 section#home .overlay {
   width: 100%;
   float: left;
   height: 100%;
-  background-color: rgba(0,0,255,0.3);
+  background-image: url("http://oneclickpixels.com/investable/assets/images/utility/bg-chart.png");
+  background-position: center center;
+  background-size: cover;
 }
 section#home .wrapper-blocks {
   width: 100%;
