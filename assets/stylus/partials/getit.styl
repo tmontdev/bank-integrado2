@@ -1,24 +1,26 @@
 #getit
 	width 100%
 	float left
-	background-color #ededed
+	background-color #FFF
 	transition all 500ms
+	padding 70px 0 0 0
 	.getit-presentation
 		width 100%
 		float left
 		text-align center
 		h2
-			color darken($blue1, 30%)
-			font-family $font1
-			font-size 3em
-			margin-bottom: 10px
+			color: colors.blue1
+			font-family 'Open Sans', sans-serif
+			font-size 28px
+			margin 0 0 5px 0
 		span
 			color #6e6e6e
-			font-family $font2
+			font-family 'Open Sans', sans-serif
 			width 100%
 			float left
-			font-size 1.5em
-			margin 1% 0%
+			font-size 15px
+			margin-bottom 30px
+			color #353535
 		.discover
 			width 20%
 			height 80px
@@ -57,32 +59,39 @@
 			.step-content
 				width 100%
 				float left
-				border-radius 10px
-				padding 2%
+				padding 20px
 				.step-presentation
 					width 100%
 					float left
 					.step-icon
 						width 100%
 						float left
-						margin 2% 0%
 						i
 							color darken($blue1, 30%)
 							font-size 3em
-							padding 1em
+							width 140px
+							height @width
+							line-height @height
+							text-align center
 							border-radius 50%
 							border solid 1px darken($blue1, 30%)
-						.fa-file
-							padding 1em 1.1em
-					span
-						color darken($blue1, 30%)
-						font-family $font1
-						font-size 1.4em
-						margin 5% 0
+					h4
+						color #404040
+						font-family 'Roboto Condensed', sans-serif
+						font-size 26px
+						margin 10px 0 0 0
+						font-weight bold
+						size 100
+						span
+							color: darken($blue1, 30%)
 				.step-explanation
 					width 100%
 					float left
 					color #4a4a4a
-					font-size 1.2em
-					font-family $font2
-					padding 5% 0%
+					font-size 16px
+					padding-top 5px
+					font-family 'Open Sans', sans-serif
+					p
+						size 100
+						padding 0
+						margin 0
