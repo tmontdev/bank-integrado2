@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Economica:400,700");
 @import url("https://fonts.googleapis.com/css?family=Arizonia");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
 *,
 *:before,
 *:after {
@@ -528,13 +529,21 @@ header#header {
 header#header .block-menu {
   width: 100%;
   float: left;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-  padding: 25px 0;
+  padding: 40px 0;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   -ms-transition: all 250ms ease-in-out;
+}
+header#header .block-menu .container {
+  padding-left: 60px;
+  padding-right: 60px;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+  -moz-transition: all 250ms;
+  -o-transition: all 250ms;
+  -ms-transition: all 250ms;
 }
 header#header .block-menu .logo {
   width: 15%;
@@ -543,28 +552,41 @@ header#header .block-menu .logo {
 header#header .block-menu .logo > img {
   max-width: 100%;
   display: block;
-  margin: 0 auto;
 }
-header#header .block-menu ul {
-  float: left;
+header#header .block-menu .menu {
   width: 70%;
+  float: left;
+}
+header#header .block-menu .menu ul {
+  width: 100%;
+  float: left;
   text-align: center;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-header#header .block-menu ul li {
+header#header .block-menu .menu ul li {
   display: inline-block;
 }
-header#header .block-menu ul li > a {
+header#header .block-menu .menu ul li > a {
   color: #fff;
   font-size: 16px;
+  padding: 5px 10px;
   letter-spacing: 1px;
-  padding: 5px 0 0 45px;
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 30px;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+}
+header#header .block-menu .menu ul li > a:hover {
+  color: #2770ce;
 }
 header#header .block-menu .header-social {
   width: 15%;
@@ -572,36 +594,39 @@ header#header .block-menu .header-social {
 }
 header#header .block-menu .header-social ul {
   list-style: none;
-  position: absolute;
-  top: 30%;
-  right: 5%;
-  width: 200px;
-}
-header#header .block-menu .header-social ul li inline-block,
-header#header .block-menu .header-social ul li a {
-  text-decoration: none;
-  color: #fff;
+  text-align: right;
+  width: 100%;
+  float: left;
   padding: 0;
-  width: 50px;
-  text-align: center;
+  margin: 0;
 }
-header#header .block-menu .header-social ul li inline-block .fa-facebook,
-header#header .block-menu .header-social ul li a .fa-facebook {
-  font-size: 1.3em;
+header#header .block-menu .header-social ul li {
+  display: inline-block;
 }
-header#header .block-menu .header-social ul li inline-block .fa-linkedin,
-header#header .block-menu .header-social ul li a .fa-linkedin {
-  font-size: 1.5em;
+header#header .block-menu .header-social ul li a {
+  color: rgba(255,255,255,0.4);
+  font-size: 1.4em;
+  padding: 9px 0;
+  margin: 0 4px;
+  line-height: 40px;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
 }
-header#header .block-menu .header-social ul li inline-block .fa-twitter,
-header#header .block-menu .header-social ul li a .fa-twitter {
-  font-size: 1.5em;
+header#header .block-menu .header-social ul li a:hover {
+  color: #fff;
 }
 header#header.nice-header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 4;
+}
+header#header.nice-header .container {
+  padding-left: 0;
+  padding-right: 0;
 }
 header#header.nice-header .block-contact {
   display: none;
@@ -617,6 +642,9 @@ header#header.nice-header .block-menu {
 }
 header#header.nice-header .block-menu ul li > a {
   color: #666;
+}
+header#header.nice-header .block-menu .header-social ul li > a:hover {
+  color: #999;
 }
 #question {
   width: 100%;
