@@ -223,12 +223,12 @@ footer#footer {
   width: 100%;
   float: left;
   height: 90vh;
-  background-image: url("http://downloadwallpaper.org/wp-content/uploads/2016/05/Sunrise-wallpaper6.jpg");
+  background-image: url("../img/footer.jpg");
   background-size: cover;
   background-position: center center;
 }
 footer#footer .overlay {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.2);
   height: 100%;
   width: 100%;
   float: left;
@@ -254,10 +254,10 @@ footer#footer .content-footer h1.title {
   -ms-text-shadow: 1px 1px 1px #565252;
 }
 footer#footer .content-footer .block-buttons {
-  width: 60%;
+  width: 100%;
   float: left;
-  margin-left: 20%;
   padding-top: 8vh;
+  text-align: center;
 }
 footer#footer .content-footer .block-buttons > a {
   display: inline-block;
@@ -281,23 +281,6 @@ footer#footer .content-footer .block-buttons a.btn-simulate {
 footer#footer .content-footer .block-buttons a.btn-simulate:hover {
   color: #fff;
   background-color: #2770ce;
-}
-footer#footer .content-footer .block-buttons a.btn-about {
-  border-radius: 0;
-  padding: 10px;
-  border-bottom: 1px solid rgba(255,255,255,0.8);
-  float: right;
-  color: rgba(255,255,255,0.8);
-  font-weight: 100;
-}
-footer#footer .content-footer .block-buttons a.btn-about i {
-  position: relative;
-  top: 3px;
-  margin-left: 4px;
-}
-footer#footer .content-footer .block-buttons a.btn-about:hover {
-  color: #fff;
-  border-bottom-color: #fff;
 }
 footer#footer .content-footer .footer-social {
   width: 100%;
@@ -478,41 +461,6 @@ header#header {
   -o-transition: all 250ms ease-in-out;
   -ms-transition: all 250ms ease-in-out;
 }
-header#header .block-contact {
-  background-color: rgba(0,0,0,0.15);
-  width: 100%;
-  float: left;
-  font-family: 'Open Sans', sans-serif;
-  -webkit-transition: all 250ms;
-  transition: all 250ms;
-  -moz-transition: all 250ms;
-  -o-transition: all 250ms;
-  -ms-transition: all 250ms;
-  padding-top: 12px;
-}
-header#header .block-contact ul {
-  padding: 0;
-  margin: 0 0 10px -5px;
-  list-style: none;
-  text-align: right;
-}
-header#header .block-contact ul li {
-  color: #fff;
-  font-size: 14px;
-  letter-spacing: 1px;
-  margin-left: 24px;
-  display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-header#header .block-contact ul li:last-child {
-  padding-right: 0;
-}
-header#header .block-contact ul li i {
-  margin-right: 3px;
-  opacity: 0.7;
-  font-size: 17px;
-}
 header#header .block-menu {
   width: 100%;
   float: left;
@@ -525,7 +473,7 @@ header#header .block-menu {
   -ms-transition: all 250ms ease-in-out;
 }
 header#header .block-menu .logo {
-  width: 140px;
+  width: 15%;
   float: left;
 }
 header#header .block-menu .logo > img {
@@ -534,9 +482,9 @@ header#header .block-menu .logo > img {
   margin: 0 auto;
 }
 header#header .block-menu ul {
-  float: right;
+  float: left;
   width: 70%;
-  text-align: right;
+  text-align: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -553,6 +501,37 @@ header#header .block-menu ul li > a {
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   font-weight: 600;
+}
+header#header .block-menu .header-social {
+  width: 15%;
+  float: left;
+}
+header#header .block-menu .header-social ul {
+  list-style: none;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  width: 200px;
+}
+header#header .block-menu .header-social ul li inline-block,
+header#header .block-menu .header-social ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0;
+  width: 50px;
+  text-align: center;
+}
+header#header .block-menu .header-social ul li inline-block .fa-facebook,
+header#header .block-menu .header-social ul li a .fa-facebook {
+  font-size: 1.3em;
+}
+header#header .block-menu .header-social ul li inline-block .fa-linkedin,
+header#header .block-menu .header-social ul li a .fa-linkedin {
+  font-size: 1.5em;
+}
+header#header .block-menu .header-social ul li inline-block .fa-twitter,
+header#header .block-menu .header-social ul li a .fa-twitter {
+  font-size: 1.5em;
 }
 header#header.nice-header {
   position: fixed;
@@ -893,7 +872,7 @@ section#home {
   width: 100%;
   float: left;
   background-image: url("http://oneclickpixels.com/investable/assets/images/bg-imgs/bg-img-3.jpg");
-  background-position: bottom left;
+  background-position: center center;
   background-size: cover;
   height: 100vh;
 }
