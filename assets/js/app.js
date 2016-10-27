@@ -26,13 +26,13 @@ $(function(){
 
 			return true;
 		}
-
+		
 		$(".query-icon i.fa-info").removeClass('fa-info').addClass('fa-question');
 		$(".question-field").removeClass('active');
 		$('.question-answer').slideUp(250);
 
 		$(this).addClass('active').find( ".question-answer" ).slideDown(250);
-		$(this).find('.query-icon i').removeClass('fa-question').addClass('fa-info');
+		$(this).find('.query-icon i').removeClass('fa-question').addClass('fa-info');		
 	});
 });
 
@@ -263,5 +263,17 @@ $(function(){
 	contact_social.css('padding-bottom', (contact_diff+60)+'px');
 })();
 
-var wow = new WOW();
-wow.init();
+
+
+//progress bar ... estudar como funciona
+var steps = $(".step");
+console.dir(steps);
+
+setTimeout(function() {
+  steps.each(function(index) {
+    var _t = $(this);
+    setTimeout(function() {
+      _t.addClass('done');
+    }, 1250*index*1.5);
+  });
+}, 500);
