@@ -785,9 +785,6 @@ header#header.nice-header .block-menu ul li > a {
 section#contact {
   width: 100%;
   float: left;
-  background-image: url("../img/pxl-contact.png");
-  background-size: 20% 100%;
-  background-repeat: no-repeat;
   background-color: #f6f6f6;
 }
 section#contact h2.title-apresentation {
@@ -808,60 +805,21 @@ section#contact p.text-apresentation {
   line-height: 20px;
   padding: 0;
 }
-section#contact .contact-social {
-  width: 40%;
-  float: left;
-  color: #fff;
-  position: relative;
-  background-color: #2770ce;
-}
-section#contact .contact-social h2.title-apresentation,
-section#contact .contact-social p.text-apresentation {
-  color: #fff;
-}
-section#contact .contact-social ul {
-  width: 100%;
-  float: left;
-  list-style: none;
-  padding: 0;
-  margin: 20px 0 60px 0;
-}
-section#contact .contact-social ul li {
-  width: 100%;
-  float: left;
-  padding: 5px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-}
-section#contact .contact-social ul li span.icon {
-  width: 35px;
-  font-size: 26px;
-  display: inline-block;
-}
-section#contact .contact-social ul li span.icon i {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-}
-section#contact .contact-social ul li span.text {
-  display: inline-block;
-  position: relative;
-  top: -4px;
-}
 section#contact .contact-form {
-  width: 60%;
+  width: 80%;
   float: left;
   text-align: justify;
-  background-color: #f6f6f6;
+  margin: 0% 10%;
 }
 section#contact .contact-form .pad-form {
   width: 80%;
   margin-left: 10%;
   float: left;
 }
-section#contact .contact-form h2.title-apresentation,
+section#contact .contact-form h2.title-apresentation {
+  color: #2770ce;
+  text-align: center;
+}
 section#contact .contact-form p.text-apresentation {
   color: #353535;
 }
