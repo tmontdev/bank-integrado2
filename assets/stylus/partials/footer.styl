@@ -80,5 +80,51 @@ footer#footer
 							text-align center
 							border-radius 50%
 							background-color alpha(#FFF, 0.8)
+							position relative
 							&:hover
 								background-color #FFF
+								&:after
+									opacity 1
+
+						.fb
+							opacity 1
+							&:after
+								content "Curta nosssa Página no Facebook!"
+								position absolute
+								bottom -50px
+								left -130px
+								text-align center
+								font-size .8em
+								color white
+								font-family $font2
+								width 300px
+								transition all 200ms ease-in-out
+								opacity 0
+						.li
+							opacity 1
+							&:after
+								content "Conheça o nosso LinkedIn!"
+								position absolute
+								bottom -50px
+								left -130px
+								text-align center
+								font-size .8em
+								color white
+								font-family $font2
+								width 300px
+								transition all 200ms ease-in-out
+								opacity 0
+						.tt
+							opacity 1
+							&:after
+								content "Nos siga no Twitter!"
+								position absolute
+								bottom -50px
+								left -130px
+								text-align center
+								font-size .8em
+								color white
+								font-family $font2
+								width 300px
+								transition all 200ms ease-in-out
+								opacity 0
