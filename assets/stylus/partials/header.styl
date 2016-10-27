@@ -5,32 +5,6 @@ header#header
 	top 0
 	left 0
 	transition all 250ms ease-in-out
-	.block-contact
-		background-color rgba(0, 0, 0, 0.15)
-		width 100%
-		float left
-		font-family 'Open Sans', sans-serif
-		transition all 250ms
-		padding-top 12px
-		ul
-			padding 0
-			margin 0 0 10px -5px
-			list-style none
-			text-align right
-			li
-				color #FFF
-				font-size fs = 14px
-				letter-spacing 1px
-				margin-left	24px
-				display inline-block
-				padding-right 5px
-				padding-left 5px
-				&:last-child
-					padding-right 0
-				i
-					margin-right 3px
-					opacity 0.7
-					font-size fs+3
 	.block-menu
 		width 100%
 		float left
@@ -38,16 +12,16 @@ header#header
 		padding 25px 0
 		transition all 250ms ease-in-out
 		.logo
-			width 140px
+			width 15%
 			float left
 			> img
 				max-width 100%
 				display block
 				margin 0 auto
 		ul
-			float right
+			float left
 			width 70%
-			text-align right
+			text-align center
 			list-style none
 			padding 0
 			margin 0
@@ -62,6 +36,29 @@ header#header
 					font-family 'Open Sans', sans-serif
 					text-decoration none
 					font-weight 600
+		.header-social
+			width 15%
+			float left
+			ul
+				list-style none
+				position absolute
+				top 30%
+				right 5%
+				width 200px
+				li
+					inline-block
+					a
+						text-decoration none
+						color white
+						padding 0
+						width 50px
+						text-align center
+						.fa-facebook
+							font-size 1.3em
+						.fa-linkedin
+							font-size 1.5em
+						.fa-twitter
+							font-size 1.5em
 	&.nice-header
 		position fixed
 		top 0
