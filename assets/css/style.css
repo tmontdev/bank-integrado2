@@ -113,67 +113,18 @@ body {
 section#about {
   width: 100%;
   float: left;
-  padding: 40px 0;
-}
-section#about .about-switch {
-  width: 100%;
-  float: left;
-  text-align: center;
-  padding: 0;
-  position: relative;
-  z-index: 3;
-}
-section#about .about-switch .switch-content {
-  width: 40%;
-  margin-left: 30%;
-  float: left;
-  border-radius: 40px;
-  background-color: #ededed;
-  height: 70px;
-  border: solid 1px #ededed;
-}
-section#about .about-switch .switch-content .switch-item {
-  width: 50%;
-  float: left;
-  border-radius: 40px;
-  height: 100%;
-  background-color: #ededed;
-  border: solid 1px #ededed;
-  color: #5d5858;
-  -webkit-transition: all 300ms;
-  transition: all 300ms;
-  -moz-transition: all 300ms;
-  -o-transition: all 300ms;
-  -ms-transition: all 300ms;
-  font-size: 1.1em;
-  outline: 0;
-  cursor: pointer;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-section#about .about-switch .switch-content .switch-item i {
-  font-size: 1.4em;
-  color: #2770ce;
-  position: relative;
-  top: 1px;
-  margin-right: 2px;
-}
-section#about .about-switch .switch-content .switch-item:hover {
-  color: #212121;
-}
-section#about .about-switch .switch-content .actived {
-  background-color: #fff;
+  padding: 30px 0 40px 0;
 }
 section#about .about-item {
   width: 100%;
   float: left;
   position: relative;
-  padding: 90px 0 30px 0;
+  padding: 60px 0 30px 0;
   min-height: 450px;
   display: none;
   background-size: 65% auto;
   background-position: 110% 0;
   background-repeat: no-repeat;
-  margin-top: -80px;
 }
 section#about .about-item .block-info {
   width: 50%;
