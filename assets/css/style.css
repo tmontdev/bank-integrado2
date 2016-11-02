@@ -930,7 +930,7 @@ section#home .wrapper-blocks .block-simulator h2 {
   font-weight: normal;
 }
 section#home .wrapper-blocks .block-simulator h2 strong {
-  color: #2770ce;
+  color: #0892d0;
 }
 section#home .wrapper-blocks .block-simulator form {
   width: 90%;
@@ -960,7 +960,7 @@ section#home .wrapper-blocks .block-simulator form .form-group > span.form-error
 }
 section#home .wrapper-blocks .block-simulator form .form-group > span.form-identifier {
   float: left;
-  background-color: #2770ce;
+  background-color: #0892d0;
   height: 45px;
   line-height: 45px;
   padding: 0 15px;
@@ -1088,7 +1088,7 @@ section#home .wrapper-blocks .block-info h1:after {
   left: 0;
   height: 8px;
   width: 10%;
-  background-color: #2770ce;
+  background-color: #0892d0;
 }
 section#home .wrapper-blocks .block-info h2 {
   width: 100%;
@@ -1101,7 +1101,7 @@ section#home .wrapper-blocks .block-info h2 {
   font-size: 32px;
 }
 section#home .wrapper-blocks .block-info h2 > span {
-  color: #2770ce;
+  color: #0892d0;
   display: block;
 }
 section#home .wrapper-blocks .block-info .block-apresentation {
@@ -1121,7 +1121,7 @@ section#home .wrapper-blocks .block-info .block-apresentation small {
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  color: #2770ce;
+  color: #0892d0;
   font-weight: bold;
 }
 section#home .wrapper-blocks .block-info .block-apresentation strong {
@@ -1130,7 +1130,7 @@ section#home .wrapper-blocks .block-info .block-apresentation strong {
   -moz-transform: scale(1.4);
   -o-transform: scale(1.4);
   -ms-transform: scale(1.4);
-  color: #2770ce;
+  color: #0892d0;
   font-weight: bold;
 }
 section#home .wrapper-blocks .block-info .block-button {
@@ -1147,7 +1147,7 @@ section#home .wrapper-blocks .block-info .block-button button.btn-simulate {
   cursor: pointer;
   border-radius: 4px;
   font-size: 20px;
-  background-color: #2770ce;
+  background-color: #0892d0;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
