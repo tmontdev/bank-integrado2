@@ -176,3 +176,20 @@ setTimeout(function() {
     }, 1250*index*1.5);
   });
 }, 500);
+
+$(function(){
+	$('.switch-header').click(function(event) {
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$('#header').removeClass('fadeInLeft').addClass('fadeOutLeft');
+			setTimeout(function(){
+		      	$("#header").removeClass('fadeOutLeft').removeClass('animated').removeClass('actived');
+	     		}, 250);
+
+		}
+		else {
+			$(this).addClass('active');			
+			$('#header').addClass('animated').addClass('actived').addClass('fadeInLeft');
+		}
+	});
+});

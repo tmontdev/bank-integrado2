@@ -1,3 +1,6 @@
+.switch-bar,
+.switch-header
+	display none	
 header#header
 	width 100%
 	float left
@@ -10,6 +13,7 @@ header#header
 		float left
 		padding 40px 0
 		transition all 250ms ease-in-out
+
 		.container
 			padding-left 60px
 			padding-right @padding-left
@@ -80,3 +84,177 @@ header#header
 				color #666
 			.header-social ul li > a:hover
 				color #999
+	.rollback
+		display none
+@media (max-width: 768px)
+	.show 
+		position absolute
+		height 100vh
+		display block !important
+		z-index 4
+		width 43%
+		float left
+		left 100%
+		top 0
+		position fixed
+	.switch-bar
+		width 100%
+		float left
+		height 50px
+		background-color white
+		box-shadow 0px 0px 5px black
+		display block
+		position fixed
+		top 0
+		z-index 3
+		left 0
+	.switch-header
+		display block
+		z-index 5
+		position absolute
+		opacity 1
+		top 10px
+		left 10px
+		width 30px
+		height 30px
+		font-size  0px
+		border solid 1px #cecece
+		color #cecece
+		border-radius 4px
+		text-align center
+		padding 0
+		position fixed
+		transition all 250ms
+		box-shadow 0px 0px 5px black
+		i
+			margin 0
+			padding 0
+			font-size 21px
+			display block
+			padding-top 3px
+	.active
+		position fixed
+		z-index 5
+		color white !important
+		border solid 1px white !important
+
+	header#header
+		width 0%
+		position fixed
+		opacity 0
+		height 100vh
+		display none
+		background-color $blue1
+		float left
+		position absolute
+		top 0
+		left 0
+		transition all 500ms ease-in-out
+		.block-menu
+			width 100%
+			float left
+			padding 0
+			transition all 250ms ease-in-out
+			z-index 999
+			height 100vh
+			.container
+				padding-left 0
+				padding-right 0
+				transition all 250ms
+				height 100vh				
+			.logo
+				width 60%
+				float left 
+				margin 0% 20%
+				top 10px
+				left 0
+				position absolute
+
+				> img
+					max-width 100%
+					display block
+			.menu
+				width 100%
+				float left
+				position absolute
+				left 0
+				top 60px			
+				ul
+					size 100
+					text-align left
+					list-style none
+					padding 0
+					margin 0
+					li
+						display block
+						size 100
+						padding 5px 
+						transition all 250ms ease
+						> a
+							color #FFF
+							font-size 15px
+							font-weight bold
+							letter-spacing 1px
+							display block
+							font-family $font1
+							text-decoration none
+							text-transform uppercase
+							line-height 30px
+							transition all 250ms ease-in-out
+							&:hover
+								color white
+						&:hover, &:focus
+							background-color $blue2
+			.header-social
+				size 100
+				position absolute
+				top 70vh
+				left 0
+				margin 0%
+
+				ul 
+					list-style none
+					text-align center
+					size 100
+					padding 0
+					margin 0
+					li
+						display inline-block
+						border solid 1px white
+						border-radius 50%
+						width 30px 
+						height 30px
+						margin 0% 5%
+						a
+							color white
+							font-size 20px
+							margin 0 4px
+							line-height 30px
+							transition all 250ms ease-in-out
+							&:hover
+								color #FFF
+		&.nice-header
+			position fixed
+			top 0
+			left 0
+			z-index 4
+			height 100vh
+			.container
+				padding 0 !important
+			.block-contact
+				display none
+			.block-menu
+				background-color $blue1
+				ap(box-shadow, 0 3px 6px 0 rgba(0, 0, 0, 0.1))
+				padding 15px 0
+				height 100vh
+				ul li > a
+					color white
+				.header-social ul li > a:hover
+					color #999
+	.actived
+		display block !important
+		opacity 1 !important
+		width 70% !important
+		position fixed
+	

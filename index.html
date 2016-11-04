@@ -11,6 +11,11 @@
 		<link rel="stylesheet" href="assets/css/slick.css">
 	</head>
 	<body>
+	<div class="switch-bar">
+		<div class="switch-header">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
+	</div>
 		<header id="header">
 			<div class="block-menu">
 				<div class="container">
@@ -46,11 +51,42 @@
 				</div>
 
 			</div>
+			<div class="rollback">
+				
+			</div>
 		</header>
 		<section id="home">
 			<div class="overlay">
 				<div class="container">
 					<div class="wrapper-blocks">
+
+						<div class="block-info">
+							<div id="block-info-welcome">
+								<h1>O Suporte para seus sonhos</h1>
+								<div class="block-apresentation">
+									<span class="text"></span>
+								</div>
+								<div class="block-button">
+									<button class="btn-simulate" id="btn-simulate">Simular</button>
+								</div>
+							</div>
+							<div id="block-info-result" style="display: none;">
+								<h2 class="result">
+									O valor da prestação é de:
+									<span id="result-simulator"></span>
+								</h2>
+								<div class="block-button">
+									<button class="btn-simulate" id="btn-simulate-again">
+										<i class="lnr lnr-sync"></i>
+										Simular novamente
+									</button>
+									<br>
+									<button class="btn-contact" id="btn-simulate-contact">
+										Solicitar Empréstimo <i class="lnr lnr-envelope"></i>
+									</button>
+								</div>
+							</div>
+						</div>
 						<div class="block-simulator">
 							<h2>Simulador de <strong>financiamento</strong></h2>
 							<form>
@@ -109,35 +145,7 @@
 									</span>
 								</div>
 							</form>
-						</div>
-						<div class="block-info">
-							<div id="block-info-welcome">
-								<h1>O Suporte para seus sonhos</h1>
-								<div class="block-apresentation">
-									<span class="text"></span>
-								</div>
-								<div class="block-button">
-									<button class="btn-simulate" id="btn-simulate">Simular</button>
-								</div>
-							</div>
-							<div id="block-info-result" style="display: none;">
-								<h2 class="result">
-									O valor da prestação é de:
-									<span id="result-simulator"></span>
-								</h2>
-								<div class="block-button">
-									<button class="btn-simulate" id="btn-simulate-again">
-										<i class="lnr lnr-sync"></i>
-										Simular novamente
-									</button>
-									<br>
-									<button class="btn-contact" id="btn-simulate-contact">
-										Solicitar Empréstimo <i class="lnr lnr-envelope"></i>
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
+						</div>					</div>
 				</div>
 			</div>
 		</section>
@@ -178,31 +186,92 @@
 									<i class="fa fa-question" aria-hidden="true"></i>
 								</div>
 								<div class="question-query">
-									<h4>Uma pergunta maneira de veiculos</h4>
+									<h4>O que é refinanciamento de veículo?</h4>
 									<div class="question-answer">
 										<p>
-											Uma resposta maneira para a pergunta maneira de veiculos
+											É uma linha de crédito onde você coloca um veículo como garantia de pagamento e por ter a garantia você consegue taxas de juros mais baixas comparado com o crédito pessoal.
 										</p>
 									</div>
 								</div>
 							</div>
-
 							<div class="question-field">
 								<div class="query-icon">
 									<i class="fa fa-question" aria-hidden="true"></i>
 								</div>
 								<div class="question-query">
-									<h4>Uma pergunta maneira de veiculos</h4>
+									<h4>Qual é a renda mínima necessária?</h4>
 									<div class="question-answer">
 										<p>
-											Uma resposta maneira para a pergunta maneira de veiculos
+											Não existe um máximo. Mas o valor solicitado não pode superar de 70% a 90% (dependendo do ano e modelo de fabricação) do valor de tabela do veículo.
 										</p>
 									</div>
 								</div>
 							</div>
-
-
-
+							<div class="question-field">
+								<div class="query-icon">
+									<i class="fa fa-question" aria-hidden="true"></i>
+								</div>
+								<div class="question-query">
+									<h4>Qual o máximo que posso solicitar?</h4>
+									<div class="question-answer">
+										<p>
+											Não existe um máximo. Mas o valor solicitado não pode superar de 70% a 90% (dependendo do ano e modelo de fabricação) do valor de tabela do veículo.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="question-field">
+								<div class="query-icon">
+									<i class="fa fa-question" aria-hidden="true"></i>
+								</div>
+								<div class="question-query">
+									<h4>Quem pode compor renda comigo?</h4>
+									<div class="question-answer">
+										<p>
+											Pai, mãe, irmãos, filhos, cônjuge ou parceiro com união estável. Compondo renda você amplia sua capacidade de pagamento.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="question-field">
+								<div class="query-icon">
+									<i class="fa fa-question" aria-hidden="true"></i>
+								</div>
+								<div class="question-query">
+									<h4>Preciso entregar meu veículo?</h4>
+									<div class="question-answer">
+										<p>
+											Não, o veículo permanece em seu nome e alienado ao banco. E a alienação é retirada na liquidação do empréstimo.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="question-field">
+								<div class="query-icon">
+									<i class="fa fa-question" aria-hidden="true"></i>
+								</div>
+								<div class="question-query">
+									<h4>O veículo precisa estar quitado?</h4>
+									<div class="question-answer">
+										<p>
+											Não necessariamente. É possível obter empréstimo se o saldo da dívida não ultrapassar o valor solicitado.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="question-field">
+								<div class="query-icon">
+									<i class="fa fa-question" aria-hidden="true"></i>
+								</div>
+								<div class="question-query">
+									<h4>Posso quitar o empréstimo quando quiser?</h4>
+									<div class="question-answer">
+										<p>
+											Sim, a quitação pode ser feita a qualquer momento e os juros restantes são retirados. Conforme o código de defesa do consumidor.
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="question-square house" id="question-house">
@@ -218,11 +287,101 @@
 								</div>
 								<div class="question-query">
 									<h4>
-										Uma pergunta maneira para imóveis
+										O que é refinanciamento de imóvel?
 									</h4>
 									<div class="question-answer">
 										<p>
-											Uma resposta maneira para a pergunta maneira de imóveis
+											É uma linha de crédito onde você coloca um imóvel como garantia de pagamento (alienação fiduciária). Por ter uma garantia de pagamento é possível conseguir empréstimos de valores mais elevados e as taxas de juros costumam ser mais baixas do que em outras modalidades de crédito.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="question-field">
+								<div class="query-icon">
+									<i class="fa fa-question" aria-hidden="true"></i>
+								</div>
+								<div class="question-query">
+									<h4>
+										Qual é a renda mínima necessária?
+									</h4>
+									<div class="question-answer">
+										<p>
+											Não existe um mínimo. Porém, as parcelas não podem superar 30% da sua renda familiar.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="question-field">
+								<div class="query-icon">
+									<i class="fa fa-question" aria-hidden="true"></i>
+								</div>
+								<div class="question-query">
+									<h4>
+										Quem pode compor renda comigo?
+									</h4>
+									<div class="question-answer">
+										<p>
+											Pai, mãe, irmãos, filhos, cônjuge ou parceiro com união estável. Compondo renda você amplia sua capacidade de pagamento.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="question-field">
+								<div class="query-icon">
+									<i class="fa fa-question" aria-hidden="true"></i>
+								</div>
+								<div class="question-query">
+									<h4>
+										Preciso entregar meu imóvel?
+									</h4>
+									<div class="question-answer">
+										<p>
+											Não, o imóvel permanece em seu nome e não é necessário desocupá-lo. Você pode continuar morando nele.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="question-field">
+								<div class="query-icon">
+									<i class="fa fa-question" aria-hidden="true"></i>
+								</div>
+								<div class="question-query">
+									<h4>
+										O imóvel precisa estar quitado?
+									</h4>
+									<div class="question-answer">
+										<p>
+											Não necessariamente. É possível obter empréstimo se o valor do empréstimo e da dívida somados não ultrapassarem metade do valor do imóvel.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="question-field">
+								<div class="query-icon">
+									<i class="fa fa-question" aria-hidden="true"></i>
+								</div>
+								<div class="question-query">
+									<h4>
+										Posso quitar o empréstimo quando quiser?
+									</h4>
+									<div class="question-answer">
+										<p>
+											Sim, a quitação pode ser feita a qualquer momento e os juros restantes são retirados. Conforme o código de defesa do consumidor.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="question-field">
+								<div class="query-icon">
+									<i class="fa fa-question" aria-hidden="true"></i>
+								</div>
+								<div class="question-query">
+									<h4>
+										Quando recebo o dinheiro?
+									</h4>
+									<div class="question-answer">
+										<p>
+											O processo de solicitação leva cerca de 30 a 60 dias após a entrega da documentação, podendo variar de acordo com seu perfil e a política de cada instituição.
 										</p>
 									</div>
 								</div>
