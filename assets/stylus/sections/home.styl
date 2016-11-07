@@ -267,9 +267,11 @@ section#home
 	.container
 		witdh 100%
 		float left 
-		padding 0
+		padding 0% 10px
 	section#home
 		width 100%
+		padding-top 50px
+
 		float left
 		background-color rgba(0, 5, 71, .7)
 		height 100vh
@@ -288,7 +290,9 @@ section#home
 				width 100% !important
 				float left !important
 			.block-simulator
-				padding-tight 20px
+				padding 0 !important
+				
+				
 				h2
 					width 100%
 					float left
@@ -429,7 +433,7 @@ section#home
 					color #FFF
 					font-family 'Roboto Condensed', sans-serif
 					font-weight bold
-					font-size 32px
+					font-size 36px
 					> span
 						color: colors.blue2
 						display block
@@ -441,10 +445,12 @@ section#home
 					color #FFF
 					font-family 'Roboto Condensed', sans-serif
 					font-weight 100
-					font-size 18px
+					font-size 20px
 					text-align center
+					height 50px
+					line-height 25px
 					small
-						font-size 18px
+						font-size 20px
 						transform scale(1.1)
 						color: colors.blue2
 						font-weight bold
@@ -454,7 +460,10 @@ section#home
 						font-weight bold
 				.block-button
 					width 50%
-					margin-top 100px
+					position absolute
+					top 0
+					left 10px
+					margin 0
 					float left
 					position relative
 					button.btn-simulate
