@@ -1,9 +1,9 @@
 (function(){
 	var appSimulator = function(){
 		this.buttons = {
-			simulate: $("#btn-simulate"),
-			simulateAgain: $("#btn-simulate-again"),
-			contact: $("#btn-simulate-contact"),
+			simulate: $(".btn-simulate"),
+			simulateAgain: $(".btn-simulate-again"),
+			contact: $(".btn-simulate-contact"),
 			controlSelect: $("section#home .control-select")
 		};
 		this.inputs = {
@@ -13,11 +13,13 @@
 		};
 		this.areas = {
 			error: $("#form-error-show"),
-			resultPrice: $("#result-simulator"),
+			resultPrice: $(".result-simulator"),
+			formGroupSimulate: $(".form-group-simulate")
 		};
 		this.blocks = {
 			infoWelcome: $("#block-info-welcome"),
-			infoResult: $("#block-info-result")
+			infoResult: $("#block-info-result"),
+			infoResultMobile: $("#block-info-result-mobile")
 		};
 		this.dataLast = {
 			type: 0,
@@ -136,6 +138,14 @@
 			this.areas.resultPrice.text(parcel_real);
 
 			var _this = this;
+			
+			if($(window).width() <= 992){
+				this.areas.formGroupSimulate.fadeOut(500, function(){
+					_this.blocks.infoResultMobile.fadeIn(500);
+				});
+				return true;
+			}
+
 			this.blocks.infoWelcome.fadeOut(500, function(){
 				_this.blocks.infoResult.fadeIn(500);
 			})
@@ -192,6 +202,9 @@ Parcelas: {replace_parcel}\n\
 		 * os errors do formulário
 		*/
 		showError: function(err){
+			if($(window).width() <= 992)
+				return alert(err);
+
 			this.areas.error.removeClass("active").text(err).addClass("active");
 
 			return false;

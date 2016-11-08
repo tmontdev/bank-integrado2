@@ -72,22 +72,22 @@
 								<div class="block-apresentation">
 									<span class="text"></span>
 								</div>
-								<div class="block-button">
+								<div class="block-button hidden-mobile">
 									<button class="btn-simulate" id="btn-simulate">Simular</button>
 								</div>
 							</div>
-							<div id="block-info-result" style="display: none;">
+							<div id="block-info-result" class="block-info-result" style="display: none;">
 								<h2 class="result">
 									O valor da prestação é de:
-									<span id="result-simulator"></span>
+									<span class="result-simulator"></span>
 								</h2>
 								<div class="block-button">
-									<button class="btn-simulate" id="btn-simulate-again">
+									<button class="btn-simulate btn-simulate-again" id="btn-simulate-again">
 										<i class="lnr lnr-sync"></i>
 										Simular novamente
 									</button>
 									<br>
-									<button class="btn-contact" id="btn-simulate-contact">
+									<button class="btn-contact btn-simulate-contact" id="btn-simulate-contact">
 										Solicitar Empréstimo <i class="lnr lnr-envelope"></i>
 									</button>
 								</div>
@@ -145,13 +145,32 @@
 										<option value="immobile-4">60x</option>
 									</select>
 								</div>
-								<div class="form-group">
+								<div class="form-group hidden-mobile">
 									<span class="form-error" id="form-error-show">
 										Ocorreu um erro
 									</span>
 								</div>
+								<div class="form-group visible-mobile form-group-simulate">
+									<button class="btn-simulate" id="btn-simulate-mobile" type="button">Simular</button>
+								</div>
+								<div id="block-info-result-mobile" class="block-info-result" style="display: none;">
+									<h2 class="result">
+										O valor da prestação é de:
+										<span class="result-simulator"></span>
+									</h2>
+									<div class="block-button">
+										<button class="btn-simulate btn-simulate-again" id="btn-simulate-again-mobile" type="button">
+											<i class="lnr lnr-sync"></i>
+											Simular novamente
+										</button>
+										<br>
+										<button class="btn-contact btn-simulate-contact" id="btn-simulate-contact-mobile" type="button">
+											Solicitar Empréstimo <i class="lnr lnr-envelope"></i>
+										</button>
+									</div>
+								</div>
 							</form>
-						</div>					</div>
+						</div>					
 				</div>
 			</div>
 		</section>
