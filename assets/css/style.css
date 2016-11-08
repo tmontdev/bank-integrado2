@@ -1057,6 +1057,12 @@ section#contact .contact-form {
   text-align: justify;
   margin: 0% 10%;
 }
+@media (max-width: 992px) {
+  section#contact .contact-form {
+    width: 100%;
+    margin: 0;
+  }
+}
 section#contact .contact-form .pad-form {
   width: 80%;
   margin-left: 10%;
@@ -1083,11 +1089,27 @@ section#contact .contact-form form.form .half-area.left,
 section#contact .contact-form form.form .half-area.right {
   width: 50%;
 }
+@media (max-width: 992px) {
+  section#contact .contact-form form.form .half-area.left,
+  section#contact .contact-form form.form .half-area.right {
+    width: 100%;
+  }
+}
 section#contact .contact-form form.form .half-area.left {
   padding-right: 5px;
 }
+@media (max-width: 992px) {
+  section#contact .contact-form form.form .half-area.left {
+    padding-right: 0;
+  }
+}
 section#contact .contact-form form.form .half-area.right {
   padding-left: 5px;
+}
+@media (max-width: 992px) {
+  section#contact .contact-form form.form .half-area.right {
+    padding-left: 0;
+  }
 }
 section#contact .contact-form form.form .half-area.text-right {
   text-align: right;

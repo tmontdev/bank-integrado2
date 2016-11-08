@@ -25,6 +25,9 @@ section#contact
 		float left
 		text-align justify
 		margin 0% 10%
+		@media (max-width 992px)
+			width 100%
+			margin 0
 		.pad-form
 			width 80%
 			margin-left 10%
@@ -45,10 +48,16 @@ section#contact
 				&.left,
 				&.right
 					width 50%
+					@media (max-width 992px)
+						width 100%
 				&.left
 					padding-right 5px
+					@media (max-width 992px)
+						padding-right 0
 				&.right
 					padding-left 5px
+					@media (max-width 992px)
+						padding-left 0
 				&.text-right
 					text-align right
 				&.pad-top
