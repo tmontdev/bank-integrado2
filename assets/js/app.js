@@ -128,6 +128,10 @@ $(function(){
 	 * Make nice menu on scroll
 	*/
 	var makeMenu = function(){
+		if($(window).width() <= 992)
+			return false;
+
+
 		var logos = {
 			white: 'http://www.airbus.com/presscentre/corporate-information/logo-downloads/?eID=maglisting_push&tx_maglisting_pi1%5BdocID%5D=104852',
 			colored: 'http://www.airbus.com/presscentre/corporate-information/logo-downloads/?eID=maglisting_push&tx_maglisting_pi1%5BdocID%5D=104854'

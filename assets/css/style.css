@@ -235,6 +235,11 @@ footer#footer {
   background-size: cover;
   background-position: center center;
 }
+@media (max-width: 992px) {
+  footer#footer {
+    height: auto;
+  }
+}
 footer#footer .overlay {
   background-color: rgba(0,5,71,0.6);
   height: 100%;
@@ -929,7 +934,7 @@ header#header.nice-header .block-menu .header-social ul li > a:hover {
   }
   header#header .block-menu .header-social ul li a {
     color: #fff;
-    font-size: 25px !important;
+    font-size: 12px;
     padding: 0;
     margin: 0;
     line-height: 40px;
@@ -938,51 +943,6 @@ header#header.nice-header .block-menu .header-social ul li > a:hover {
     -moz-transition: all 250ms ease-in-out;
     -o-transition: all 250ms ease-in-out;
     -ms-transition: all 250ms ease-in-out;
-  }
-  header#header .block-menu .header-social ul li a:hover,
-  header#header .block-menu .header-social ul li a:focus {
-    color: #000;
-  }
-  header#header .block-menu .header-social ul li:hover,
-  header#header .block-menu .header-social ul li:focus {
-    border: solid 1px #000;
-    color: #000;
-  }
-  header#header.nice-header {
-    position: fixed;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 901;
-  }
-  header#header.nice-header .container {
-    padding: 0 !important;
-    width: 100% !important;
-    float: left;
-    -webkit-transition: all 250ms;
-    transition: all 250ms;
-    -moz-transition: all 250ms;
-    -o-transition: all 250ms;
-    -ms-transition: all 250ms;
-  }
-  header#header.nice-header .block-contact {
-    display: none;
-  }
-  header#header.nice-header .block-menu {
-    background-color: #2770ce;
-    height: 100vh;
-    -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.1);
-    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.1);
-    -moz-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.1);
-    -o-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.1);
-    -ms-box-shadow: 0 3px 6px 0 rgba(0,0,0,0.1);
-    padding: 0 !important;
-  }
-  header#header.nice-header .block-menu ul li > a {
-    color: #fff;
-  }
-  header#header.nice-header .block-menu .header-social ul li > a:hover {
-    color: #000;
   }
 }
 #question {
