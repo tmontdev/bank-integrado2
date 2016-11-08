@@ -881,27 +881,20 @@ header#header.nice-header .block-menu .header-social ul li > a:hover {
   }
   header#header .block-menu .menu ul li > a {
     color: #fff;
-    font-size: 18px;
-    padding: 5px 10px;
+    font-size: 16px;
+    padding: 2px 10px;
     letter-spacing: 1px;
     display: block;
-    font-family: "Ubuntu";
+    font-family: 'Robot Condensed', sans-serif;
     text-decoration: none;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 30px;
     -webkit-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
     -moz-transition: all 250ms ease-in-out;
     -o-transition: all 250ms ease-in-out;
     -ms-transition: all 250ms ease-in-out;
   }
-  header#header .block-menu .menu ul li > a:hover {
+  header#header .block-menu .menu ul li:hover a {
     color: #fff;
-  }
-  header#header .block-menu .menu ul li:focus {
-    color: #fff;
-    background-color: #0892d0;
   }
   header#header .block-menu .header-social {
     width: 100%;
@@ -914,17 +907,12 @@ header#header.nice-header .block-menu .header-social ul li > a:hover {
     width: 100%;
     float: left;
     padding: 0px;
-    margin-top: 40px;
+    margin: 20px 0 0 7px;
   }
   header#header .block-menu .header-social ul li {
-    width: 40px;
-    height: 40px;
-    display: block;
-    border-radius: 50%;
-    border: solid 1px #fff;
     padding: 0px;
     display: inline-block;
-    margin: 0px 7px;
+    margin: 0px 2px;
     -webkit-transition: all 250ms ease-in-outs;
     transition: all 250ms ease-in-outs;
     -moz-transition: all 250ms ease-in-outs;
@@ -933,16 +921,24 @@ header#header.nice-header .block-menu .header-social ul li > a:hover {
     text-align: center;
   }
   header#header .block-menu .header-social ul li a {
-    color: #fff;
-    font-size: 12px;
+    color: #2770ce;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
     padding: 0;
     margin: 0;
-    line-height: 40px;
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
     -webkit-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
     -moz-transition: all 250ms ease-in-out;
     -o-transition: all 250ms ease-in-out;
     -ms-transition: all 250ms ease-in-out;
+    display: block;
+  }
+  header#header .block-menu .header-social ul li:hover a {
+    color: #2770ce;
   }
 }
 #question {
