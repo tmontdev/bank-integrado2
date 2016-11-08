@@ -747,39 +747,47 @@ header#header.nice-header .block-menu ul li > a {
 header#header.nice-header .block-menu .header-social ul li > a:hover {
   color: #999;
 }
-header#header .rollback {
+.rollback {
   display: none;
 }
 @media (max-width: 768px) {
-  .switch-on {
-    border: solid 1px #2770ce !important;
-    color: #2770ce !important;
-  }
-  .back {
-    width: 30%;
-    height: 100vh;
-    float: left;
+  .rollback {
+    z-index: -1;
     position: fixed;
-    display: block !important;
-    background-color: #000;
     top: 0;
-    left: 70%;
+    right: 0;
+    width: 30%;
+    opacity: 0;
+    height: 100vh;
+    -webkit-transition: z-index 300ms, opacity 650ms ease-in-out;
+    transition: z-index 300ms, opacity 650ms ease-in-out;
+    -moz-transition: z-index 300ms, opacity 650ms ease-in-out;
+    -o-transition: z-index 300ms, opacity 650ms ease-in-out;
+    -ms-transition: z-index 300ms, opacity 650ms ease-in-out;
+    display: inline-block;
+  }
+  .rollback.show {
+    z-index: 5;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.4);
   }
   .switch-header {
     position: fixed;
     display: block;
     color: #fff;
-    border: solid 1px #fff;
-    border-radius: 4px;
-    top: 10px;
-    left: 10px;
+    border: 0;
+    top: 12px;
+    left: 12px;
     font-size: 20px;
     padding: 0px 4px;
-    z-index: 999;
+    z-index: 5;
+  }
+  .switch-header.switch-on {
+    color: #2770ce;
   }
   .switch-bar {
     width: 100%;
-    z-index: 900;
+    z-index: 4;
     float: left;
     height: 50px;
     position: fixed;
@@ -787,8 +795,7 @@ header#header .rollback {
     display: block;
     top: 0;
     left: 0;
-    background-color: #ededed;
-    box-shadow: 0px 0px 5px #000;
+    background-color: #f8f8f8;
   }
   .switch-bar span {
     position: fixed;
@@ -800,21 +807,25 @@ header#header .rollback {
     z-index: 999;
   }
   header#header {
-    width: 0%;
+    width: 70%;
     float: left;
     position: fixed;
     height: 100vh;
     opacity: 0;
-    display: none;
     top: 0;
-    left: 0;
+    left: -70%;
     background-color: #2770ce;
     -webkit-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
     -moz-transition: all 250ms ease-in-out;
     -o-transition: all 250ms ease-in-out;
     -ms-transition: all 250ms ease-in-out;
-    z-index: 901;
+    z-index: 3;
+  }
+  header#header.header-actived {
+    left: 0;
+    opacity: 1;
+    z-index: 5;
   }
   header#header .block-menu {
     width: 100%;
@@ -937,16 +948,6 @@ header#header .rollback {
     border: solid 1px #000;
     color: #000;
   }
-  header#header .show {
-    display: block !important;
-    z-index: 999;
-    position: fixed;
-    height: 100vh;
-    top: 0;
-    left: 100%;
-    width: 43%;
-    background-color: transparent;
-  }
   header#header.nice-header {
     position: fixed;
     height: 100vh;
@@ -982,11 +983,6 @@ header#header .rollback {
   }
   header#header.nice-header .block-menu .header-social ul li > a:hover {
     color: #000;
-  }
-  .header-actived {
-    width: 70% !important;
-    opacity: 1 !important;
-    display: block !important;
   }
 }
 #question {
