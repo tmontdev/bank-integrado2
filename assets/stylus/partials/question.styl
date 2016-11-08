@@ -9,6 +9,8 @@
 		float left
 		padding 50px 10% 0 10%
 		position relative
+		@media (max-width 992px)
+			padding 50px 0 0 0
 		.selector-content
 			width 100%
 			float left
@@ -20,7 +22,7 @@
 				background-color transparent
 				border none
 				color white
-				font-family $font2
+				font-family 'Roboto Condensed', sans-serif
 				font-weight: 300
 				font-size 1.5em
 				padding 2% 0%
@@ -28,6 +30,9 @@
 				position relative
 				cursor pointer
 				outline 0
+				@media (max-width 992px)
+					font-size 1.3em
+					padding 9px 0
 				&:after
 					content " "
 					width 100%
@@ -65,6 +70,8 @@
 				text-align center
 				padding 25px 0
 				border-bottom solid 2px #ededed
+				@media (max-width 992px)
+					padding 13px
 				> h2
 					font-family 'Roboto Condensed', sans-serif
 					color: colors.blue1
@@ -72,21 +79,29 @@
 					font-weight normal
 					padding 0
 					margin 0
+					@media (max-width 992px)
+						font-size 18px
 			.question-container
 				width 100%
 				float left
 				padding 20px 5% 40px 5%
+				@media (max-width 992px)
+					padding 2px 5%
 				.question-field
 					width 100%
 					float left
 					border-bottom solid 2px #ededed
 					position relative
 					padding 5px 10px 5px 3em
+					@media (max-width 992px)
+						padding-left 32px
 					.query-icon
 						position absolute
 						top 0px
 						left -5px
 						transition all 250ms
+						@media (max-width 992px)
+							top 6px
 						i
 							font-size 22px
 							color #FFF
@@ -96,6 +111,11 @@
 							text-align center
 							background-color: colors.blue1
 							border-radius 50%
+							@media (max-width 992px)
+								width 30px
+								height @width
+								line-height @height
+								font-size 14px
 					.question-query
 						width 100%
 						float left
@@ -110,6 +130,8 @@
 							cursor pointer
 							padding 0
 							margin 0
+							@media (max-width 992px)
+								font-size  18px
 						.question-answer
 							width 100%
 							float left
@@ -121,6 +143,8 @@
 								font-family 'Open Sans', sans-serif
 								padding 0
 								margin 0
+								@media (max-width 992px)
+									font-size 15px
 					&:last-child
 						border-bottom none
 		.actived
