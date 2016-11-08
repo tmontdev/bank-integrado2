@@ -158,10 +158,22 @@ section#about .about-item {
   background-position: 110% 0;
   background-repeat: no-repeat;
 }
+@media (max-width: 992px) {
+  section#about .about-item {
+    background-image: none !important;
+    padding: 0;
+    min-height: auto;
+  }
+}
 section#about .about-item .block-info {
   width: 50%;
   float: left;
   padding-top: 10px;
+}
+@media (max-width: 992px) {
+  section#about .about-item .block-info {
+    width: 100%;
+  }
 }
 section#about .about-item .block-info h1 {
   float: left;
@@ -175,6 +187,12 @@ section#about .about-item .block-info h1 {
 section#about .about-item .block-info h1 span {
   color: #2770ce;
 }
+@media (max-width: 992px) {
+  section#about .about-item .block-info h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+}
 section#about .about-item .block-info p {
   width: 100%;
   margin: 0;
@@ -183,6 +201,12 @@ section#about .about-item .block-info p {
   font-family: 'Open Sans', sans-serif;
   color: rgba(0,0,0,0.4);
   font-size: 16px;
+}
+@media (max-width: 992px) {
+  section#about .about-item .block-info p {
+    text-align: center;
+    font-size: 15px;
+  }
 }
 section#about .about-item .image {
   width: 70%;

@@ -12,10 +12,16 @@ section#about
 		background-size 65% auto
 		background-position 110% 0
 		background-repeat no-repeat
+		@media (max-width 992px)
+			background-image none !important
+			padding 0
+			min-height auto
 		.block-info
 			width 50%
 			float left
 			padding-top 10px
+			@media (max-width 992px)
+				width 100%
 			h1
 				float left
 				width 100%
@@ -26,6 +32,9 @@ section#about
 				padding 0
 				span
 					color: colors.blue1
+				@media (max-width 992px)
+					font-size 26px
+					text-align center
 			p
 				width 100%
 				margin 0
@@ -34,6 +43,9 @@ section#about
 				font-family 'Open Sans', sans-serif
 				color rgba(0, 0, 0, 0.4)
 				font-size 16px
+				@media (max-width 992px)
+					text-align center
+					font-size 15px
 		.image
 			width 70%
 			float left
