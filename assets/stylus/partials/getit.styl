@@ -63,6 +63,8 @@
 			padding 0.5%
 			text-align center
 			display block
+			@media (max-width: 992px)
+				width 100%
 			.step-content
 				width 100%
 				float left
@@ -82,6 +84,11 @@
 							text-align center
 							border-radius 50%
 							background-color rgba(0, 0, 0, 0.5)
+							@media (max-width: 992px)
+								width 80px
+								height @width
+								line-height @height
+								font-size 2.1em
 					h4
 						color #f6f6f6
 						font-family 'Roboto Condensed', sans-serif

@@ -437,6 +437,11 @@ footer#footer .content-footer .footer-social ul.list-social li .tt:after {
   text-align: center;
   display: block;
 }
+@media (max-width: 992px) {
+  #getit .steps .step {
+    width: 100%;
+  }
+}
 #getit .steps .step .step-content {
   width: 100%;
   float: left;
@@ -459,6 +464,14 @@ footer#footer .content-footer .footer-social ul.list-social li .tt:after {
   text-align: center;
   border-radius: 50%;
   background-color: rgba(0,0,0,0.5);
+}
+@media (max-width: 992px) {
+  #getit .steps .step .step-content .step-presentation .step-icon i {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 2.1em;
+  }
 }
 #getit .steps .step .step-content .step-presentation h4 {
   color: #f6f6f6;
