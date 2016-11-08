@@ -1,7 +1,7 @@
 section#home
 	width 100%
 	float left
-	background-color rgba(0, 5, 71, .7)
+	background-color $blue2
 	height 100vh
 	@media (max-width: 992px)
 		height auto
@@ -18,14 +18,14 @@ section#home
 		#block-info-result-mobile
 			padding-top 20px
 		button.btn-simulate
-			color #FFF
+			color $blue2
 			font-family 'Roboto Condensed', sans-serif
 			border 0
 			padding 10px 40px
 			cursor pointer
 			border-radius 4px
 			font-size 20px
-			background-color: colors.blue2
+			background-color: white
 			transition all 250ms ease-in-out
 			transform scale(1)
 			i
@@ -34,6 +34,9 @@ section#home
 				top 2px
 			&.featured
 				transform scale(1.5)
+			&:hover, &:focus
+				box-shadow 0px 0px 10px white
+				color $blue1
 		button.btn-contact
 			color alpha(#FFF, 0.8)
 			font-family 'Roboto Condensed', sans-serif
@@ -57,7 +60,7 @@ section#home
 				border-bottom 0
 			i
 				margin-left 7px
-			&:hover
+			&:hover, &:focus
 				color #FFF
 				border-bottom 1px solid #FFF
 				@media (max-width 992px)
@@ -86,7 +89,7 @@ section#home
 				font-size 32px
 				font-weight normal
 				strong
-					color: colors.blue2
+					color: white
 				@media (max-width 992px)
 					text-align center
 					font-size 28px
@@ -119,11 +122,11 @@ section#home
 							opacity 1
 					> span.form-identifier
 						float left 
-						background-color $blue2
+						background-color white
 						height 45px
 						line-height @height
 						padding 0 15px
-						color #FFF
+						color $blue2
 						font-family 'Roboto Condensed', sans-serif
 						border-radius 5px 0 0 5px
 						font-size 18px
@@ -246,7 +249,7 @@ section#home
 				font-weight bold
 				font-size 32px
 				> span
-					color: colors.blue2
+					color: white
 					display block
 			.block-apresentation
 				width 100%
@@ -263,13 +266,13 @@ section#home
 				small
 					font-size 28px
 					transform scale(1.1)
-					color: colors.blue2
+					color: white
 					font-weight bold
 					@media (max-width 992px)
 						font-size 20px
 				strong
 					transform scale(1.4)
-					color: colors.blue2
+					color: white
 					font-weight bold
 					@media (max-width 992px)
 						font-size 20px

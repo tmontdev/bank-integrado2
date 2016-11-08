@@ -1295,7 +1295,7 @@ section#contact .contact-form form.form .half-area button.btn-send:hover {
 section#home {
   width: 100%;
   float: left;
-  background-color: rgba(0,5,71,0.7);
+  background-color: #0892d0;
   height: 100vh;
 }
 @media (max-width: 992px) {
@@ -1319,14 +1319,14 @@ section#home .wrapper-blocks #block-info-result-mobile {
   padding-top: 20px;
 }
 section#home .wrapper-blocks button.btn-simulate {
-  color: #fff;
+  color: #0892d0;
   font-family: 'Roboto Condensed', sans-serif;
   border: 0;
   padding: 10px 40px;
   cursor: pointer;
   border-radius: 4px;
   font-size: 20px;
-  background-color: #0892d0;
+  background-color: #fff;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
@@ -1349,6 +1349,11 @@ section#home .wrapper-blocks button.btn-simulate.featured {
   -moz-transform: scale(1.5);
   -o-transform: scale(1.5);
   -ms-transform: scale(1.5);
+}
+section#home .wrapper-blocks button.btn-simulate:hover,
+section#home .wrapper-blocks button.btn-simulate:focus {
+  box-shadow: 0px 0px 10px #fff;
+  color: #2770ce;
 }
 section#home .wrapper-blocks button.btn-contact {
   color: rgba(255,255,255,0.8);
@@ -1383,12 +1388,14 @@ section#home .wrapper-blocks button.btn-contact {
 section#home .wrapper-blocks button.btn-contact i {
   margin-left: 7px;
 }
-section#home .wrapper-blocks button.btn-contact:hover {
+section#home .wrapper-blocks button.btn-contact:hover,
+section#home .wrapper-blocks button.btn-contact:focus {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
 @media (max-width: 992px) {
-  section#home .wrapper-blocks button.btn-contact:hover {
+  section#home .wrapper-blocks button.btn-contact:hover,
+  section#home .wrapper-blocks button.btn-contact:focus {
     border-bottom: 0;
   }
 }
@@ -1431,7 +1438,7 @@ section#home .wrapper-blocks .block-simulator h2 {
   font-weight: normal;
 }
 section#home .wrapper-blocks .block-simulator h2 strong {
-  color: #0892d0;
+  color: #fff;
 }
 @media (max-width: 992px) {
   section#home .wrapper-blocks .block-simulator h2 {
@@ -1482,11 +1489,11 @@ section#home .wrapper-blocks .block-simulator form .form-group > span.form-error
 }
 section#home .wrapper-blocks .block-simulator form .form-group > span.form-identifier {
   float: left;
-  background-color: #0892d0;
+  background-color: #fff;
   height: 45px;
   line-height: 45px;
   padding: 0 15px;
-  color: #fff;
+  color: #0892d0;
   font-family: 'Roboto Condensed', sans-serif;
   border-radius: 5px 0 0 5px;
   font-size: 18px;
@@ -1660,7 +1667,7 @@ section#home .wrapper-blocks .block-info h2 {
   font-size: 32px;
 }
 section#home .wrapper-blocks .block-info h2 > span {
-  color: #0892d0;
+  color: #fff;
   display: block;
 }
 section#home .wrapper-blocks .block-info .block-apresentation {
@@ -1686,7 +1693,7 @@ section#home .wrapper-blocks .block-info .block-apresentation small {
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  color: #0892d0;
+  color: #fff;
   font-weight: bold;
 }
 @media (max-width: 992px) {
@@ -1700,7 +1707,7 @@ section#home .wrapper-blocks .block-info .block-apresentation strong {
   -moz-transform: scale(1.4);
   -o-transform: scale(1.4);
   -ms-transform: scale(1.4);
-  color: #0892d0;
+  color: #fff;
   font-weight: bold;
 }
 @media (max-width: 992px) {
