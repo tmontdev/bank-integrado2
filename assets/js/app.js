@@ -108,8 +108,14 @@ $(function(){
 	var footer_size_changed = false;
 
 	var changeSizeFooter = function(){
+		if($(window).width() <= 992){
+			$("footer#footer").css('height', 'auto');
+			return true;
+		}
+
 		var window_height = $(window).height();
 		var header_height = $("header#header").height();
+
 
 		$("footer#footer").css('height', (window_height-header_height)+"px");
 

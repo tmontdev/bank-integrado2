@@ -20,6 +20,10 @@ footer#footer
 			margin 0 0 0 20%
 			font-size 46px
 			ap(text-shadow, 1px 1px 1px #565252)
+			@media(max-width 992px)
+				size 100
+				font-size 27px
+				margin 0
 		.block-buttons
 			size 100
 			padding-top 8vh
@@ -45,14 +49,22 @@ footer#footer
 			margin-top 20vh
 			border-top 1px solid alpha(#FFF, 0.5)
 			padding 20px 5% 0 5%
+			@media(max-width 992px)
+				margin-top 30px
 			ul
 				size 50
 				list-style none
 				padding 0
 				margin 0
+				@media (max-width 992px)
+					size 100
 				li
 					display inline-block
 					margin 0 10px
+					@media (max-width 992px)
+						display block
+						text-align center
+						margin 0
 					> a
 						display block
 						text-decoration none
@@ -64,13 +76,21 @@ footer#footer
 							letter-spacing 1px
 							font-size 18px
 							font-family 'Roboto Condensed', sans-serif
+							@media (max-width 992px)
+								padding 3px 0
 							&:hover
 								color #FFF
 						&:first-child
 							margin-left 0
 				&.list-social
 					text-align right
+					@media (max-width 992px)
+						text-align center
+						padding-top 20px
+						padding-bottom 10px
 					li
+						@media (max-width 992px)
+							display inline-block
 						> a
 							font-size 22px
 							color #222
@@ -81,11 +101,19 @@ footer#footer
 							border-radius 50%
 							background-color alpha(#FFF, 0.8)
 							position relative
+							@media (max-width 992px)
+								width 37px
+								height @width
+								line-height @height
+								font-size 18px
+								&:after
+									content none
+									opacity 0
+									display none
 							&:hover
 								background-color #FFF
 								&:after
 									opacity 1
-
 						.fb
 							opacity 1
 							&:after
