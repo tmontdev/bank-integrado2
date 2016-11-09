@@ -692,7 +692,7 @@ header#header .block-menu .menu ul li > a {
   -ms-transition: all 250ms ease-in-out;
 }
 header#header .block-menu .menu ul li > a:hover {
-  color: #2770ce;
+  text-shadow: 0px 0px 4px #fff;
 }
 header#header .block-menu .header-social {
   width: 15%;
