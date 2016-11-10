@@ -385,7 +385,7 @@ footer#footer .content-footer .footer-social ul.list-social li > a {
   color: #222;
   width: 45px;
   height: 45px;
-  line-height: 45px;
+  line-height: 50px;
   text-align: center;
   border-radius: 50%;
   background-color: rgba(255,255,255,0.8);
@@ -395,80 +395,21 @@ footer#footer .content-footer .footer-social ul.list-social li > a {
   footer#footer .content-footer .footer-social ul.list-social li > a {
     width: 37px;
     height: 37px;
-    line-height: 37px;
+    line-height: 40px;
     font-size: 18px;
-  }
-  footer#footer .content-footer .footer-social ul.list-social li > a:after {
-    content: none;
-    opacity: 0;
-    display: none;
   }
 }
 footer#footer .content-footer .footer-social ul.list-social li > a:hover {
   background-color: #fff;
 }
-footer#footer .content-footer .footer-social ul.list-social li > a:hover:after {
-  opacity: 1;
-}
 footer#footer .content-footer .footer-social ul.list-social li .fb {
   opacity: 1;
-}
-footer#footer .content-footer .footer-social ul.list-social li .fb:after {
-  content: "Curta nosssa Página no Facebook!";
-  position: absolute;
-  bottom: -50px;
-  left: -130px;
-  text-align: center;
-  font-size: 0.8em;
-  color: #fff;
-  font-family: "Roboto";
-  width: 300px;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  opacity: 0;
 }
 footer#footer .content-footer .footer-social ul.list-social li .li {
   opacity: 1;
 }
-footer#footer .content-footer .footer-social ul.list-social li .li:after {
-  content: "Conheça o nosso LinkedIn!";
-  position: absolute;
-  bottom: -50px;
-  left: -130px;
-  text-align: center;
-  font-size: 0.8em;
-  color: #fff;
-  font-family: "Roboto";
-  width: 300px;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  opacity: 0;
-}
 footer#footer .content-footer .footer-social ul.list-social li .tt {
   opacity: 1;
-}
-footer#footer .content-footer .footer-social ul.list-social li .tt:after {
-  content: "Nos siga no Twitter!";
-  position: absolute;
-  bottom: -50px;
-  left: -130px;
-  text-align: center;
-  font-size: 0.8em;
-  color: #fff;
-  font-family: "Roboto";
-  width: 300px;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  opacity: 0;
 }
 #getit {
   width: 100%;
