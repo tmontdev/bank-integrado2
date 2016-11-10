@@ -60,8 +60,11 @@ section#contact
 						padding-left 0
 				&.text-right
 					text-align right
+				&.text-left
+					text-align left
 				&.pad-top
 					padding-top 20px
+
 				.form-control
 					width 100%
 					float left
@@ -92,3 +95,37 @@ section#contact
 						margin-left 5px
 					&:hover
 						color: colors.blue1
+			.terms-politics
+				width 70%
+				float left 
+				text-align left 
+				margin-top -20px
+				span 
+					font-family $font1
+					color #6e6e6e
+					a
+						text-decoration none
+				.modal  /* The Modal (background) */
+                                        			display none /* Hidden by default */
+                                        			position fixed /* Stay in place */
+                                        			z-index 1 /* Sit on top */
+                                        			left 0
+                                        			top 0
+                                        			width 100% /* Full width */
+                                        			height 100% /* Full height */
+                                        			overflow auto /* Enable scroll if needed */
+                                        			background-color rgb(0,0,0) /* Fallback color */
+                                        			background-color rgba(0,0,0,0.4) /* Black w/ opacity */
+                                        			.modal-content /* Modal Content/Box */
+                                                			background-color #fefefe
+                                                			margin 15% auto /* 15% from the top and centered */
+                                                			padding 20px
+                                                			border 1px solid #888
+                                                			font-family $font1
+                                                			width 80% /* Could be more or less, depending on screen size */
+                                                			.close /* The Close Button */
+                                                        				color #aaa
+                                                        				float: right
+                                                        				font-size 28px
+                                                        				font-weight bold
+                                                        				

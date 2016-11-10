@@ -1186,6 +1186,9 @@ section#contact .contact-form form.form .half-area.right {
 section#contact .contact-form form.form .half-area.text-right {
   text-align: right;
 }
+section#contact .contact-form form.form .half-area.text-left {
+  text-align: left;
+}
 section#contact .contact-form form.form .half-area.pad-top {
   padding-top: 20px;
 }
@@ -1232,6 +1235,19 @@ section#contact .contact-form form.form .half-area button.btn-send i {
 }
 section#contact .contact-form form.form .half-area button.btn-send:hover {
   color: #2770ce;
+}
+section#contact .contact-form form.form .terms-politics {
+  width: 70%;
+  float: left;
+  text-align: left;
+  margin-top: -20px;
+}
+section#contact .contact-form form.form .terms-politics span {
+  font-family: "Ubuntu";
+  color: #6e6e6e;
+}
+section#contact .contact-form form.form .terms-politics span a {
+  text-decoration: none;
 }
 section#home {
   width: 100%;
