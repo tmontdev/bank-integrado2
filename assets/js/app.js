@@ -100,7 +100,6 @@ $(function(){
 	 var headerHeight = $('.header').height();
 	$('.home').css('padding-top', headerHeight+'px');
 });
-$(function(){
 	$('.who-button').click(function(event) {
 		$('.mission-button').removeClass('actived');
 		$(this).addClass('actived');
@@ -114,7 +113,6 @@ $(function(){
 		$('.mission').addClass('actived').addClass('animated').addClass('fadeIn');
 	});
 
-});
 
 (function(){
 	/**
@@ -186,3 +184,34 @@ $(function(){
 
 	contact_social.css('padding-bottom', (contact_diff+60)+'px');
 })();
+
+
+$(function(){
+	var square = $('#politics-square');
+	var button = $('#politics');
+
+	button.click(function(event) {
+		square.addClass('active');
+	});
+	$('.modal').click(function(event) {
+		square.removeClass('active');
+	});
+	$('.close').click(function(event) {
+		square.removeClass('active');
+	});
+});
+
+$(function(){
+	var square = $('#terms-square');
+	var button = $('#terms');
+
+	button.click(function(event) {
+		square.addClass('active');
+	});
+	$('.modal').click(function(event) {
+		square.removeClass('active');
+	});
+	$('.close').click(function(event) {
+		square.removeClass('active');
+	});
+});

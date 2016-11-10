@@ -1242,12 +1242,62 @@ section#contact .contact-form form.form .terms-politics {
   text-align: left;
   margin-top: -20px;
 }
+@media (max-width: 768px) {
+  section#contact .contact-form form.form .terms-politics {
+    font-size: 10px;
+    width: 60%;
+  }
+}
 section#contact .contact-form form.form .terms-politics span {
   font-family: "Ubuntu";
   color: #6e6e6e;
 }
 section#contact .contact-form form.form .terms-politics span a {
   text-decoration: none;
+}
+section#contact .contact-form form.form .terms-politics .modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+}
+section#contact .contact-form form.form .terms-politics .modal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  font-family: "Ubuntu";
+  width: 80%;
+}
+section#contact .contact-form form.form .terms-politics .modal .modal-content .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+section#contact .contact-form form.form .terms-politics .modal .modal-content .close:hover,
+section#contact .contact-form form.form .terms-politics .modal .modal-content .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+section#contact .contact-form form.form .terms-politics .modal h1 {
+  color: #000;
+  font-family: "Roboto";
+  text-align: center;
+}
+section#contact .contact-form form.form .terms-politics .active {
+  display: block !important;
 }
 section#home {
   width: 100%;
