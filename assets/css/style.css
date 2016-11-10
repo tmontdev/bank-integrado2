@@ -1295,7 +1295,7 @@ section#contact .contact-form form.form .half-area button.btn-send:hover {
 section#home {
   width: 100%;
   float: left;
-  background-color: #0892d0;
+  background-color: #2770ce;
   height: 100vh;
 }
 @media (max-width: 992px) {
@@ -1643,7 +1643,7 @@ section#home .wrapper-blocks .block-info h1:after {
   left: 0;
   height: 8px;
   width: 10%;
-  background-color: #0892d0;
+  background-color: #fff;
 }
 @media (max-width: 992px) {
   section#home .wrapper-blocks .block-info h1 {
