@@ -221,12 +221,6 @@ section#about .about-item .image {
 section#about .about-item.who {
   background-image: url("../img/who.jpg");
 }
-section#about .about-item.mission {
-  background-image: url("../img/mission.jpg");
-}
-section#about .about-item.actived {
-  display: block;
-}
 footer#footer {
   width: 100%;
   float: left;
@@ -1143,6 +1137,7 @@ section#contact .contact-form .pad-form {
 section#contact .contact-form h2.title-apresentation {
   color: #2770ce;
   text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 section#contact .contact-form p.text-apresentation {
   color: #353535;
@@ -1480,10 +1475,11 @@ section#home .wrapper-blocks .block-simulator form .form-group-simulate {
 }
 section#home .wrapper-blocks .block-simulator form .form-group > span.form-error {
   float: left;
-  color: #ff1c00;
+  color: #ffec9b;
+  text-shadow: 0px 0px 5px #ffec9b;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 21px;
-  font-weight: 100;
+  font-weight: 300;
   opacity: 0;
   -webkit-transition: all 250ms;
   transition: all 250ms;
@@ -1641,6 +1637,7 @@ section#home .wrapper-blocks .block-info h1 {
   font-weight: bold;
   font-size: 48px;
   position: relative;
+  text-shadow: 0px 0px 10px #fff;
 }
 section#home .wrapper-blocks .block-info h1:after {
   content: ' ';
