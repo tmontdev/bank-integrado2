@@ -1,3 +1,4 @@
+new WOW().init();
 $(function(){
 	$(".to-question-square").click(function(e){
 		if($(this).hasClass("actived"))

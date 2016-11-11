@@ -176,7 +176,7 @@
 			var contact_top = $("section#contact").offset().top;
 			var header_top = $("header#header .block-menu").outerHeight()-20;
 			var default_message = "\
-Digite sua mensagem aqui e não apage os valores abaixo... \n\n\
+Digite sua mensagem aqui e não apague os valores abaixo... \n\n\
 Valor da parcela: {replace_result}\n\
 Valor desejado: {replace_price}\n\
 Tipo: {replace_type}\n\
@@ -228,7 +228,7 @@ Parcelas: {replace_parcel}\n\
 			var minValue = this.dataParcels.minValues[typeSelected];
 			var minValueReal = this.priceToReal(minValue.toFixed(2));
 
-			var message_error = "Seu crédito tem que ser maior que "+minValueReal;
+			var message_error = "Seu crédito tem que ser maior que "+minValueReal+".";
 
 			if(!price_val || !price_int)
 				return this.showError(message_error);
