@@ -227,6 +227,11 @@ Parcelas: {replace_parcel}\n\
 			var typeSelected = this.controlSelect.selects.type.val();
 			var minValue = this.dataParcels.minValues[typeSelected];
 			var minValueReal = this.priceToReal(minValue.toFixed(2));
+			
+			var num = minValueReal;
+			groupSeparator = ".";
+
+			minValueReal =  num.substr(0, num.length - 3) + groupSeparator + num.substr(num.length - 3);
 
 			minValueReal.maskMoney({thousands:'.', decimal:','});
 			var message_error = "Seu crédito tem que ser maior que "+minValueReal+".";
