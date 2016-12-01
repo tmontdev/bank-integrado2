@@ -27,13 +27,13 @@ $(function(){
 
 			return true;
 		}
-		
+
 		$(".query-icon i.fa-info").removeClass('fa-info').addClass('fa-question');
 		$(".question-field").removeClass('active');
 		$('.question-answer').slideUp(250);
 
 		$(this).addClass('active').find( ".question-answer" ).slideDown(250);
-		$(this).find('.query-icon i').removeClass('fa-question').addClass('fa-info');		
+		$(this).find('.query-icon i').removeClass('fa-question').addClass('fa-info');
 	});
 });
 
@@ -147,8 +147,8 @@ $(function(){
 
 
 		var logos = {
-			white: 'http://www.airbus.com/presscentre/corporate-information/logo-downloads/?eID=maglisting_push&tx_maglisting_pi1%5BdocID%5D=104852',
-			colored: 'http://www.airbus.com/presscentre/corporate-information/logo-downloads/?eID=maglisting_push&tx_maglisting_pi1%5BdocID%5D=104854'
+			white: 'assets/img/logo_white.png',
+			colored: 'assets/img/logo_blue.png'
 		};
 
 		var scroll_top = $(window).scrollTop();

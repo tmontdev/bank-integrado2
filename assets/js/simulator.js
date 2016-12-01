@@ -228,6 +228,7 @@ Parcelas: {replace_parcel}\n\
 			var minValue = this.dataParcels.minValues[typeSelected];
 			var minValueReal = this.priceToReal(minValue.toFixed(2));
 
+			minValueReal.maskMoney({thousands:'.', decimal:','});
 			var message_error = "Seu crédito tem que ser maior que "+minValueReal+".";
 
 			if(!price_val || !price_int)
