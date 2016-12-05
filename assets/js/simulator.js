@@ -226,14 +226,11 @@ Parcelas: {replace_parcel}\n\
 
 			var typeSelected = this.controlSelect.selects.type.val();
 			var minValue = this.dataParcels.minValues[typeSelected];
-			var minValueReal = this.priceToReal(minValue.toFixed(2));
+			var minValueReal = minValue.toFixed(2);
 			
-			var num = minValueReal;
-			groupSeparator = ".";
+			var valueShow = "R$" + ((minValue == 5000.00) ? "5.000,00" : "60.000,00");
 
-			minValueReal =  num.substr(0, num.length - 3) + groupSeparator + num.substr(num.length - 3);
-
-			var message_error = "Seu crédito tem que ser maior que "+minValueReal;
+			var message_error = "Seu crédito tem que ser maior que "+valueShow;
 
 			if(!price_val || !price_int)
 				return this.showError(message_error);
